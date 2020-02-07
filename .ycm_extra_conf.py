@@ -1,0 +1,1 @@
+../docs/linux/.ycm_extra_conf.py
