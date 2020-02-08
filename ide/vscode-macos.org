@@ -69,7 +69,7 @@
 
 2. 将.vscode目录下载下来并放到这个目录下
 
-  [[https://github.com/linc5403/c/tree/master/ide/.vscode][.vscode目录]]
+  [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
 
   下载和拷贝完成后你的工作目录应该是这个样子的：
 
