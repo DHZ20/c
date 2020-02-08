@@ -61,38 +61,69 @@
 
 * 配置VS Code的C语言编译选项
 
-1. 使用⇧⌘P（同时按住Shift+Command+P）打开VS code命令行，输入 ~Edit~ ;看起来应该是这样：
+1. 新建一个目录用于存放C的项目：
 
-  [[./img/vs-code-edit-json-config.png]]
+  #+begin_src shell
+    bash-3.2$ mkdir c-projects
+  #+end_src
 
-2. 选择 ~Edit Configurations (JSON)~ ，会进入到c_cpp_properties.json文件到编辑界面：
+2. 将.vscode目录下载下来并放到这个目录下
 
-  [[./img/c_cpp_properties_json.png]]
+  [[https://github.com/linc5403/c/tree/master/ide/.vscode][.vscode目录]]
 
+  下载和拷贝完成后你的工作目录应该是这个样子的：
 
-3. 使用下面的内容替换该文件的已有内容
+  #+begin_example
+    c-projects/
+    └── .vscode
+      ├── c_cpp_properties.json
+      ├── launch.json
+      └── tasks.json
+  #+end_example
 
-   #+begin_src json
-     {
-	 "configurations": [
-	     {
-		 "name": "macOS",
-		 "includePath": [
-		     "${workspaceFolder}/**"
-		 ],
-		 "defines": [],
-		 "macFrameworkPath": [
-		     "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-		 ],
-		 "compilerPath": "/usr/bin/clang",
-		 "cStandard": "c11",
-		 "cppStandard": "c++17",
-		 "intelliSenseMode": "clang-x64"
-	     }
-	 ],
-	 "version": 4
-     }   
-   #+end_src
+3. 用VS Code打开这个目录
 
-4. 配置build task
+   就是命令行下进入c-projects目录，然后执行 ~code .~ 命令：
 
+   #+begin_example
+     bash-3.2$ cd c-projects/
+     bash-3.2$ pwd
+     /Users/banyuan/c-projects
+     bash-3.2$ code .
+   #+end_example
+
+   此时应该可以出现VS Code的界面，同时加载了c-projects目录：
+
+   [[../img/vs-code-startup.png]]
+
+* Hello, World
+
+创建你的第一个C程序并运行吧：
+
+1. 新建文件保存为hello.c，并输入如下代码：
+
+#+begin_src c
+  #include <stdio.h>
+
+  int main(int argc, char** argv) {
+      printf("Hello, world!\n");
+      return 0;
+  }
+#+end_src
+
+  [[./img/hello-code.png]]
+
+2. 使用⇧⌘B(同时按住Shift+Command+B)进行编译：
+
+   [[./img/compile.png]]
+
+3. 终端下可以看到多出了编译出来的可执行文件：hello
+
+   #+begin_example
+     bash-3.2$ ls
+     hello           hello.c         hello.dSYM
+   #+end_example
+
+4. 通过 ~./hello~ 执行该文件
+
+   [[./img/result.png]]
