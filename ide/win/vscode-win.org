@@ -1,0 +1,121 @@
+* 安装cygwin
+
+** 下载安装文件
+
+下面两个地址任选一个
+
+[[https://cygwin.com/setup-x86_64.exe][官网下载]]
+
+[[https://github.com/linc5403/c/blob/master/ide/win/setup-x86_64.exe][我的github下载]]
+
+** 安装cygwin
+
+*** next到选择站点的时候添加163的地址
+
+到下面这个页面的时候在Url里面输入 ~http://mirrors.163.com/cygwin/~ ，点击“Add”按钮。否则下载速度会相当慢。
+
+[[./img/cygwin-add-163.png]]
+
+*** 选择gcc和相关软件进行安装
+
+在 ~Select Packages~ 页面选择3个软件：gcc-core, gdb, cmake。注意左上角的下拉菜单选中~View~，然后右边可以搜索；双击Skip那个地方可以选中该软件：
+
+[[./img/cygwin-select-gcc-full.png]]
+
+[[./img/cygwin-select-gdb-full.png]]
+
+[[./img/cygwin-select-make-full.png]]
+
+*** 完成后的确认
+
+安装完成后桌面会出现cygwin的快捷方式，双击会进入终端界面，在里面输入 ~cc --version~ 出现如下所示结果表示安装成功：
+
+[[./img/start-gcc.png]]
+
+* 下载VS Code并安装
+
+[[https://code.visualstudio.com/download][下载链接]]
+
+选择User Installer -> 64bit下载并安装：
+
+[[./img/download-win-64-user.png]]
+
+选择Windows版本下载
+
+安装的时候一路Next就可以了， *重点:安装完成后需要重启电脑* ，因为需要将VS Code添加到系统路径中。
+
+* 安装VS Code C/C++插件
+
+打开visual Studio Code，安装c/c++插件:
+
+[[./img/vs-install-plugin.png]]
+
+
+* 配置VS Code的C语言编译选项
+
+1. cygwin下新建一个目录用于存放C的项目：
+
+  #+begin_src shell
+    bash-3.2$ mkdir c-projects
+  #+end_src
+
+2. 将.vscode目录下载下来并放到这个目录下
+
+  [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
+
+  下载和拷贝完成后你的工作目录应该是这个样子的：
+
+  #+begin_example
+    c-projects/
+    └── .vscode
+      ├── c_cpp_properties.json
+      ├── launch.json
+      └── tasks.json
+  #+end_example
+
+3. 用VS Code打开这个目录
+
+   就是命令行下进入c-projects目录，然后执行 ~code .~ 命令：
+
+   #+begin_example
+     bash-3.2$ cd c-projects/
+     bash-3.2$ pwd
+     /Users/banyuan/c-projects
+     bash-3.2$ code .
+   #+end_example
+
+   此时应该可以出现VS Code的界面，同时加载了c-projects目录：
+
+   [[./img/vs-code-startup.png]]
+
+* Hello, World
+
+创建你的第一个C程序并运行吧：
+
+1. 新建文件保存为hello.c，并输入如下代码：
+
+#+begin_src c
+  #include <stdio.h>
+
+  int main(int argc, char** argv) {
+      printf("Hello, world!\n");
+      return 0;
+  }
+#+end_src
+
+  [[./img/hello-code.png]]
+
+2. 使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译：
+
+   [[./img/compile.png]]
+
+3. cygwin下可以看到多出了编译出来的可执行文件：hello
+
+   #+begin_example
+     bash-3.2$ ls
+     hello           hello.c         hello.dSYM
+   #+end_example
+
+4. 通过 ~./hello~ 执行该文件
+
+   [[./img/result.png]]
