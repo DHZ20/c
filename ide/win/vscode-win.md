@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [安装cygwin](#orgf7a265c)
-    1.  [下载安装文件](#org70214f1)
-    2.  [安装cygwin](#org28bbeea)
-        1.  [next到选择站点的时候添加163的地址](#org43ad288)
-        2.  [选择gcc和相关软件进行安装](#orgeb423b7)
-        3.  [完成后的确认](#orgb06bf56)
-2.  [下载VS Code并安装](#org4f7ea00)
-3.  [安装VS Code C/C++插件](#orgd3dbc93)
-4.  [配置VS Code的C语言编译选项](#org07e58fd)
-5.  [Hello, World](#org5dbf892)
+1.  [安装cygwin](#org1d16822)
+    1.  [下载安装文件](#org34ee4ec)
+    2.  [安装cygwin](#orgd7a2a1a)
+        1.  [next到选择站点的时候添加163的地址](#orgd52d8ff)
+        2.  [选择gcc和相关软件进行安装](#org8fb4dc2)
+        3.  [完成后的确认](#org48c6845)
+2.  [下载VS Code并安装](#orgeb8c063)
+3.  [安装VS Code C/C++插件](#orgb4f5dac)
+4.  [配置VS Code的C语言编译选项](#orgb689567)
+5.  [Hello, World](#orgc270ced)
 
 
-<a id="orgf7a265c"></a>
+<a id="org1d16822"></a>
 
 # 安装cygwin
 
 
-<a id="org70214f1"></a>
+<a id="org34ee4ec"></a>
 
 ## 下载安装文件
 
@@ -29,12 +29,12 @@
 [我的github下载](https://github.com/linc5403/c/blob/master/ide/win/setup-x86_64.exe)
 
 
-<a id="org28bbeea"></a>
+<a id="orgd7a2a1a"></a>
 
 ## 安装cygwin
 
 
-<a id="org43ad288"></a>
+<a id="orgd52d8ff"></a>
 
 ### next到选择站点的时候添加163的地址
 
@@ -43,11 +43,11 @@
 ![img](./img/cygwin-add-163.png)
 
 
-<a id="orgeb423b7"></a>
+<a id="org8fb4dc2"></a>
 
 ### 选择gcc和相关软件进行安装
 
-在 `Select Packages` 页面选择3个软件：gcc-core, gdb, cmake。注意左上角的下拉菜单选中~View~，然后右边可以搜索；双击Skip那个地方可以选中该软件：
+在 `Select Packages` 页面选择3个软件：gcc-core, gdb, cmake。注意左上角View的下拉菜单选中 `Full` ，然后右边可以搜索；双击Skip那个地方选中该软件：
 
 ![img](./img/cygwin-select-gcc-full.png)
 
@@ -56,7 +56,7 @@
 ![img](./img/cygwin-select-make-full.png)
 
 
-<a id="orgb06bf56"></a>
+<a id="org48c6845"></a>
 
 ### 完成后的确认
 
@@ -65,7 +65,7 @@
 ![img](./img/start-gcc.png)
 
 
-<a id="org4f7ea00"></a>
+<a id="orgeb8c063"></a>
 
 # 下载VS Code并安装
 
@@ -80,7 +80,7 @@
 安装的时候一路Next就可以了， **重点:安装完成后需要重启电脑** ，因为需要将VS Code添加到系统路径中。
 
 
-<a id="orgd3dbc93"></a>
+<a id="orgb4f5dac"></a>
 
 # 安装VS Code C/C++插件
 
@@ -89,7 +89,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="org07e58fd"></a>
+<a id="orgb689567"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -125,20 +125,20 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="org5dbf892"></a>
+<a id="orgc270ced"></a>
 
 # Hello, World
 
 创建你的第一个C程序并运行吧：
 
 1.  新建文件保存为hello.c，并输入如下代码：
-
-    #include <stdio.h>
     
-    int main(int argc, char** argv) {
-        printf("Hello, world!\n");
-        return 0;
-    }
+        #include <stdio.h>
+        
+        int main(int argc, char** argv) {
+            printf("Hello, world!\n");
+            return 0;
+        }
 
 ![img](./img/hello-code.png)
 
@@ -151,9 +151,9 @@
 2.  cygwin下可以看到多出了编译出来的可执行文件：hello
     
         bash-3.2$ ls
-        hello           hello.c
+        hello.exe           hello.c
 
-3.  通过 `./hello` 执行该文件
+3.  通过 `./hello.exe` 执行该文件
     
     ![img](./img/result.png)
 

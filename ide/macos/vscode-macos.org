@@ -12,7 +12,7 @@
   InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 #+end_example
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[[*下载VS Code][下载VS Code]]。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[[*下载VS Code并安装][下载VS Code并安装]]。
 
 ** 安装clang
 
@@ -36,11 +36,11 @@
 
 [[./img/Clang Check version.png]]
 
-* 下载VS Code
+* 下载VS Code并安装
 
 [[https://code.visualstudio.com/download][下载链接]]
 
-选择mac os版本下载
+选择mac os版本下载并安装
 
 * 安装VS Code C/C++插件
 
@@ -104,18 +104,18 @@
 
 1. 新建文件保存为hello.c，并输入如下代码：
 
-#+begin_src c
-  #include <stdio.h>
-
-  int main(int argc, char** argv) {
-      printf("Hello, world!\n");
-      return 0;
-  }
-#+end_src
+  #+begin_src c
+    #include <stdio.h>
+  
+    int main(int argc, char** argv) {
+        printf("Hello, world!\n");
+        return 0;
+    }
+  #+end_src
 
   [[./img/hello-code.png]]
 
-  *注意* 记得保存文件
+  *记得保存文件*
 
 2. 使用⇧⌘B(同时按住Shift+Command+B)进行编译：
 

@@ -18,7 +18,7 @@
 
 *** 选择gcc和相关软件进行安装
 
-在 ~Select Packages~ 页面选择3个软件：gcc-core, gdb, cmake。注意左上角的下拉菜单选中~View~，然后右边可以搜索；双击Skip那个地方可以选中该软件：
+在 ~Select Packages~ 页面选择3个软件：gcc-core, gdb, cmake。注意左上角View的下拉菜单选中 ~Full~ ，然后右边可以搜索；双击Skip那个地方选中该软件：
 
 [[./img/cygwin-select-gcc-full.png]]
 
@@ -96,14 +96,16 @@
 
 1. 新建文件保存为hello.c，并输入如下代码：
 
-#+begin_src c
-  #include <stdio.h>
+   #+begin_src c
+       #include <stdio.h>
 
-  int main(int argc, char** argv) {
-      printf("Hello, world!\n");
-      return 0;
-  }
-#+end_src
+       int main(int argc, char** argv) {
+	   printf("Hello, world!\n");
+	   return 0;
+       }
+   #+end_src
+
+
 
   [[./img/hello-code.png]]
 
@@ -117,9 +119,9 @@
 
    #+begin_example
      bash-3.2$ ls
-     hello           hello.c
+     hello.exe           hello.c
    #+end_example
 
-4. 通过 ~./hello~ 执行该文件
+4. 通过 ~./hello.exe~ 执行该文件
 
    [[./img/result.png]]

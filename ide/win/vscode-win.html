@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-09 Sun 00:16 -->
+<!-- 2020-02-09 Sun 00:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -246,31 +246,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4845780">1. 安装cygwin</a>
+<li><a href="#org6b2dbaf">1. 安装cygwin</a>
 <ul>
-<li><a href="#org6425636">1.1. 下载安装文件</a></li>
-<li><a href="#orgda6e614">1.2. 安装cygwin</a>
+<li><a href="#org67d04cf">1.1. 下载安装文件</a></li>
+<li><a href="#org818a001">1.2. 安装cygwin</a>
 <ul>
-<li><a href="#org89a923e">1.2.1. next到选择站点的时候添加163的地址</a></li>
-<li><a href="#org5d326f5">1.2.2. 选择gcc和相关软件进行安装</a></li>
-<li><a href="#org493e742">1.2.3. 完成后的确认</a></li>
+<li><a href="#org26586c6">1.2.1. next到选择站点的时候添加163的地址</a></li>
+<li><a href="#org2e43a82">1.2.2. 选择gcc和相关软件进行安装</a></li>
+<li><a href="#org8c05321">1.2.3. 完成后的确认</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orge8c4545">2. 下载VS Code并安装</a></li>
-<li><a href="#org6c4669c">3. 安装VS Code C/C++插件</a></li>
-<li><a href="#org70d50b2">4. 配置VS Code的C语言编译选项</a></li>
-<li><a href="#orgd48a240">5. Hello, World</a></li>
+<li><a href="#org5be93bf">2. 下载VS Code并安装</a></li>
+<li><a href="#orga9617b4">3. 安装VS Code C/C++插件</a></li>
+<li><a href="#orgeeb72d5">4. 配置VS Code的C语言编译选项</a></li>
+<li><a href="#org7fdcbfd">5. Hello, World</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4845780" class="outline-2">
-<h2 id="org4845780"><span class="section-number-2">1</span> 安装cygwin</h2>
+<div id="outline-container-org6b2dbaf" class="outline-2">
+<h2 id="org6b2dbaf"><span class="section-number-2">1</span> 安装cygwin</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org6425636" class="outline-3">
-<h3 id="org6425636"><span class="section-number-3">1.1</span> 下载安装文件</h3>
+<div id="outline-container-org67d04cf" class="outline-3">
+<h3 id="org67d04cf"><span class="section-number-3">1.1</span> 下载安装文件</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 下面两个地址任选一个
@@ -286,12 +286,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgda6e614" class="outline-3">
-<h3 id="orgda6e614"><span class="section-number-3">1.2</span> 安装cygwin</h3>
+<div id="outline-container-org818a001" class="outline-3">
+<h3 id="org818a001"><span class="section-number-3">1.2</span> 安装cygwin</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org89a923e" class="outline-4">
-<h4 id="org89a923e"><span class="section-number-4">1.2.1</span> next到选择站点的时候添加163的地址</h4>
+<div id="outline-container-org26586c6" class="outline-4">
+<h4 id="org26586c6"><span class="section-number-4">1.2.1</span> next到选择站点的时候添加163的地址</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <p>
 到下面这个页面的时候在Url里面输入 <code>http://mirrors.163.com/cygwin/</code> ，点击“Add”按钮。否则下载速度会相当慢。
@@ -305,11 +305,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org5d326f5" class="outline-4">
-<h4 id="org5d326f5"><span class="section-number-4">1.2.2</span> 选择gcc和相关软件进行安装</h4>
+<div id="outline-container-org2e43a82" class="outline-4">
+<h4 id="org2e43a82"><span class="section-number-4">1.2.2</span> 选择gcc和相关软件进行安装</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <p>
-在 <code>Select Packages</code> 页面选择3个软件：gcc-core, gdb, cmake。注意左上角的下拉菜单选中~View~，然后右边可以搜索；双击Skip那个地方可以选中该软件：
+在 <code>Select Packages</code> 页面选择3个软件：gcc-core, gdb, cmake。注意左上角View的下拉菜单选中 <code>Full</code> ，然后右边可以搜索；双击Skip那个地方选中该软件：
 </p>
 
 
@@ -332,8 +332,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org493e742" class="outline-4">
-<h4 id="org493e742"><span class="section-number-4">1.2.3</span> 完成后的确认</h4>
+<div id="outline-container-org8c05321" class="outline-4">
+<h4 id="org8c05321"><span class="section-number-4">1.2.3</span> 完成后的确认</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <p>
 安装完成后桌面会出现cygwin的快捷方式，双击会进入终端界面，在里面输入 <code>cc --version</code> 出现如下所示结果表示安装成功：
@@ -349,8 +349,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orge8c4545" class="outline-2">
-<h2 id="orge8c4545"><span class="section-number-2">2</span> 下载VS Code并安装</h2>
+<div id="outline-container-org5be93bf" class="outline-2">
+<h2 id="org5be93bf"><span class="section-number-2">2</span> 下载VS Code并安装</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="https://code.visualstudio.com/download">下载链接</a>
@@ -376,8 +376,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org6c4669c" class="outline-2">
-<h2 id="org6c4669c"><span class="section-number-2">3</span> 安装VS Code C/C++插件</h2>
+<div id="outline-container-orga9617b4" class="outline-2">
+<h2 id="orga9617b4"><span class="section-number-2">3</span> 安装VS Code C/C++插件</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 打开visual Studio Code，安装c/c++插件:
@@ -392,8 +392,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org70d50b2" class="outline-2">
-<h2 id="org70d50b2"><span class="section-number-2">4</span> 配置VS Code的C语言编译选项</h2>
+<div id="outline-container-orgeeb72d5" class="outline-2">
+<h2 id="orgeeb72d5"><span class="section-number-2">4</span> 配置VS Code的C语言编译选项</h2>
 <div class="outline-text-2" id="text-4">
 <ol class="org-ol">
 <li><p>
@@ -423,7 +423,11 @@ c-projects/
   ├── c_cpp_properties.json
   ├── launch.json
   └── tasks.json
-</pre></li>
+</pre>
+
+<p>
+<b>注意</b> .vscode是隐藏目录，需要使用 <code>ls -la</code> 进行查看
+</p></li>
 
 <li><p>
 用VS Code打开这个目录
@@ -453,16 +457,17 @@ bash-3.2$ code .
 </div>
 </div>
 
-<div id="outline-container-orgd48a240" class="outline-2">
-<h2 id="orgd48a240"><span class="section-number-2">5</span> Hello, World</h2>
+<div id="outline-container-org7fdcbfd" class="outline-2">
+<h2 id="org7fdcbfd"><span class="section-number-2">5</span> Hello, World</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 创建你的第一个C程序并运行吧：
 </p>
 
 <ol class="org-ol">
-<li>新建文件保存为hello.c，并输入如下代码：</li>
-</ol>
+<li><p>
+新建文件保存为hello.c，并输入如下代码：
+</p>
 
 <div class="org-src-container">
 <pre class="src src-c">#include &lt;stdio.h&gt;
@@ -472,7 +477,10 @@ int main(int argc, char** argv) {
     return 0;
 }
 </pre>
-</div>
+</div></li>
+</ol>
+
+
 
 
 <div class="figure">
@@ -501,11 +509,11 @@ cygwin下可以看到多出了编译出来的可执行文件：hello
 
 <pre class="example">
 bash-3.2$ ls
-hello           hello.c
+hello.exe           hello.c
 </pre></li>
 
 <li><p>
-通过 <code>./hello</code> 执行该文件
+通过 <code>./hello.exe</code> 执行该文件
 </p>
 
 
@@ -519,7 +527,7 @@ hello           hello.c
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: lin chuan</p>
-<p class="date">Created: 2020-02-09 Sun 00:16</p>
+<p class="date">Created: 2020-02-09 Sun 00:34</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
