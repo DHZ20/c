@@ -40,8 +40,6 @@
 
 [[./img/download-win-64-user.png]]
 
-选择Windows版本下载
-
 安装的时候一路Next就可以了， *重点:安装完成后需要重启电脑* ，因为需要将VS Code添加到系统路径中。
 
 * 安装VS Code C/C++插件

@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [安装cygwin](#org1d16822)
-    1.  [下载安装文件](#org34ee4ec)
-    2.  [安装cygwin](#orgd7a2a1a)
-        1.  [next到选择站点的时候添加163的地址](#orgd52d8ff)
-        2.  [选择gcc和相关软件进行安装](#org8fb4dc2)
-        3.  [完成后的确认](#org48c6845)
-2.  [下载VS Code并安装](#orgeb8c063)
-3.  [安装VS Code C/C++插件](#orgb4f5dac)
-4.  [配置VS Code的C语言编译选项](#orgb689567)
-5.  [Hello, World](#orgc270ced)
+1.  [安装cygwin](#org9cd3a22)
+    1.  [下载安装文件](#org1997670)
+    2.  [安装cygwin](#orgb2d81dd)
+        1.  [next到选择站点的时候添加163的地址](#orgfeed3fd)
+        2.  [选择gcc和相关软件进行安装](#orga63fb84)
+        3.  [完成后的确认](#orga165d0d)
+2.  [下载VS Code并安装](#orgab63e9d)
+3.  [安装VS Code C/C++插件](#orgd4d4734)
+4.  [配置VS Code的C语言编译选项](#org487bc2b)
+5.  [Hello, World](#org01e11bd)
 
 
-<a id="org1d16822"></a>
+<a id="org9cd3a22"></a>
 
 # 安装cygwin
 
 
-<a id="org34ee4ec"></a>
+<a id="org1997670"></a>
 
 ## 下载安装文件
 
@@ -29,12 +29,12 @@
 [我的github下载](https://github.com/linc5403/c/blob/master/ide/win/setup-x86_64.exe)
 
 
-<a id="orgd7a2a1a"></a>
+<a id="orgb2d81dd"></a>
 
 ## 安装cygwin
 
 
-<a id="orgd52d8ff"></a>
+<a id="orgfeed3fd"></a>
 
 ### next到选择站点的时候添加163的地址
 
@@ -43,7 +43,7 @@
 ![img](./img/cygwin-add-163.png)
 
 
-<a id="org8fb4dc2"></a>
+<a id="orga63fb84"></a>
 
 ### 选择gcc和相关软件进行安装
 
@@ -56,7 +56,7 @@
 ![img](./img/cygwin-select-make-full.png)
 
 
-<a id="org48c6845"></a>
+<a id="orga165d0d"></a>
 
 ### 完成后的确认
 
@@ -65,7 +65,7 @@
 ![img](./img/start-gcc.png)
 
 
-<a id="orgeb8c063"></a>
+<a id="orgab63e9d"></a>
 
 # 下载VS Code并安装
 
@@ -75,12 +75,10 @@
 
 ![img](./img/download-win-64-user.png)
 
-选择Windows版本下载
-
 安装的时候一路Next就可以了， **重点:安装完成后需要重启电脑** ，因为需要将VS Code添加到系统路径中。
 
 
-<a id="orgb4f5dac"></a>
+<a id="orgd4d4734"></a>
 
 # 安装VS Code C/C++插件
 
@@ -89,7 +87,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgb689567"></a>
+<a id="org487bc2b"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -125,7 +123,7 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="orgc270ced"></a>
+<a id="org01e11bd"></a>
 
 # Hello, World
 
