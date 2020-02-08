@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [安装cygwin](#org9cd3a22)
-    1.  [下载安装文件](#org1997670)
-    2.  [安装cygwin](#orgb2d81dd)
-        1.  [next到选择站点的时候添加163的地址](#orgfeed3fd)
-        2.  [选择gcc和相关软件进行安装](#orga63fb84)
-        3.  [完成后的确认](#orga165d0d)
-2.  [下载VS Code并安装](#orgab63e9d)
-3.  [安装VS Code C/C++插件](#orgd4d4734)
-4.  [配置VS Code的C语言编译选项](#org487bc2b)
-5.  [Hello, World](#org01e11bd)
+1.  [安装cygwin](#org3fce5c2)
+    1.  [下载安装文件](#org1e83b9f)
+    2.  [安装cygwin](#org68e8007)
+        1.  [next到选择站点的时候添加163的地址](#org8dfc936)
+        2.  [选择gcc和相关软件进行安装](#org73bee8d)
+        3.  [完成后的确认](#org51ea8ac)
+2.  [下载VS Code并安装](#org55e0184)
+3.  [安装VS Code C/C++插件](#org5bda588)
+4.  [配置VS Code的C语言编译选项](#org295751e)
+5.  [Hello, World](#org2db14a6)
 
 
-<a id="org9cd3a22"></a>
+<a id="org3fce5c2"></a>
 
 # 安装cygwin
 
 
-<a id="org1997670"></a>
+<a id="org1e83b9f"></a>
 
 ## 下载安装文件
 
@@ -29,12 +29,12 @@
 [我的github下载](https://github.com/linc5403/c/blob/master/ide/win/setup-x86_64.exe)
 
 
-<a id="orgb2d81dd"></a>
+<a id="org68e8007"></a>
 
 ## 安装cygwin
 
 
-<a id="orgfeed3fd"></a>
+<a id="org8dfc936"></a>
 
 ### next到选择站点的时候添加163的地址
 
@@ -43,7 +43,7 @@
 ![img](./img/cygwin-add-163.png)
 
 
-<a id="orga63fb84"></a>
+<a id="org73bee8d"></a>
 
 ### 选择gcc和相关软件进行安装
 
@@ -56,7 +56,7 @@
 ![img](./img/cygwin-select-make-full.png)
 
 
-<a id="orga165d0d"></a>
+<a id="org51ea8ac"></a>
 
 ### 完成后的确认
 
@@ -65,7 +65,7 @@
 ![img](./img/start-gcc.png)
 
 
-<a id="orgab63e9d"></a>
+<a id="org55e0184"></a>
 
 # 下载VS Code并安装
 
@@ -78,7 +78,7 @@
 安装的时候一路Next就可以了， **重点:安装完成后需要重启电脑** ，因为需要将VS Code添加到系统路径中。
 
 
-<a id="orgd4d4734"></a>
+<a id="org5bda588"></a>
 
 # 安装VS Code C/C++插件
 
@@ -87,7 +87,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="org487bc2b"></a>
+<a id="org295751e"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -123,7 +123,7 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="org01e11bd"></a>
+<a id="org2db14a6"></a>
 
 # Hello, World
 
@@ -142,7 +142,7 @@
 
 **注意** 记得保存文件
 
-1.  使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译, 选择出现的 `gcc.exe build active file` ：
+1.  使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译,出现如下结果表示编译成功：
     
     ![img](./img/compile.png)
 

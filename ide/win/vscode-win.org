@@ -109,7 +109,7 @@
 
   *注意* 记得保存文件
 
-2. 使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译, 选择出现的 ~gcc.exe build active file~ ：
+2. 使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译,出现如下结果表示编译成功：
 
    [[./img/compile.png]]
 
