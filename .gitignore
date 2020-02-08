@@ -1,0 +1,16 @@
+*.swp
+.DS_Store
+*~
+*.tex
+*.aux
+*.toc
+*.out
+*.odt
+*.class
+*.log
+.*.html
+*#
+*.synctex.gz
+*.gz
+.#*
+.python-version
