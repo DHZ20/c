@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [安装clang](#org65e6e4c)
-    1.  [检查是否已经安装clang](#org8e2b96e)
-    2.  [安装clang](#orgee2fe6b)
-2.  [下载VS Code](#orgc40cdd5)
-3.  [安装VS Code C/C++插件](#org68e49c8)
-4.  [添加VS Code到PATH](#org9127531)
-5.  [配置VS Code的C语言编译选项](#orgcfc310c)
-6.  [Hello, World](#orgade1e68)
+1.  [安装clang](#orgddff005)
+    1.  [检查是否已经安装clang](#org4f47b36)
+    2.  [安装clang](#orgd38f931)
+2.  [下载VS Code](#org478fa84)
+3.  [安装VS Code C/C++插件](#org7c6eabe)
+4.  [添加VS Code到PATH](#org3567104)
+5.  [配置VS Code的C语言编译选项](#org753b2e9)
+6.  [Hello, World](#orga6898d3)
 
 
-<a id="org65e6e4c"></a>
+<a id="orgddff005"></a>
 
 # 安装clang
 
 
-<a id="org8e2b96e"></a>
+<a id="org4f47b36"></a>
 
 ## 检查是否已经安装clang
 
@@ -28,10 +28,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code](#orgc40cdd5)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code](#org478fa84)。
 
 
-<a id="orgee2fe6b"></a>
+<a id="orgd38f931"></a>
 
 ## 安装clang
 
@@ -56,7 +56,7 @@
 ![img](./img/Clang Check version.png)
 
 
-<a id="orgc40cdd5"></a>
+<a id="org478fa84"></a>
 
 # 下载VS Code
 
@@ -65,7 +65,7 @@
 选择mac os版本下载
 
 
-<a id="org68e49c8"></a>
+<a id="org7c6eabe"></a>
 
 # 安装VS Code C/C++插件
 
@@ -74,7 +74,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="org9127531"></a>
+<a id="org3567104"></a>
 
 # 添加VS Code到PATH
 
@@ -88,7 +88,7 @@
 5.  关闭VS Code
 
 
-<a id="orgcfc310c"></a>
+<a id="org753b2e9"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -107,6 +107,8 @@
           ├── c_cpp_properties.json
           ├── launch.json
           └── tasks.json
+    
+    **注意** .vscode是隐藏目录，需要使用 `ls -la` 进行查看
 
 3.  用VS Code打开这个目录
     
@@ -122,33 +124,35 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="orgade1e68"></a>
+<a id="orga6898d3"></a>
 
 # Hello, World
 
 创建你的第一个C程序并运行吧：
 
 1.  新建文件保存为hello.c，并输入如下代码：
-
-    #include <stdio.h>
     
-    int main(int argc, char** argv) {
-        printf("Hello, world!\n");
-        return 0;
-    }
+        #include <stdio.h>
+        
+        int main(int argc, char** argv) {
+            printf("Hello, world!\n");
+            return 0;
+        }
+    
+    ![img](./img/hello-code.png)
+    
+    **记得保存文件**
 
-![img](./img/hello-code.png)
-
-1.  使用⇧⌘B(同时按住Shift+Command+B)进行编译：
+2.  使用⇧⌘B(同时按住Shift+Command+B)进行编译：
     
     ![img](./img/compile.png)
 
-2.  终端下可以看到多出了编译出来的可执行文件：hello
+3.  终端下可以看到多出了编译出来的可执行文件：hello
     
         bash-3.2$ ls
         hello           hello.c         hello.dSYM
 
-3.  通过 `./hello` 执行该文件
+4.  通过 `./hello` 执行该文件
     
     ![img](./img/result.png)
 

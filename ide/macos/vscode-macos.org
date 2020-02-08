@@ -81,6 +81,8 @@
       └── tasks.json
   #+end_example
 
+  *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
+
 3. 用VS Code打开这个目录
 
    就是命令行下进入c-projects目录，然后执行 ~code .~ 命令：
@@ -112,6 +114,8 @@
 #+end_src
 
   [[./img/hello-code.png]]
+
+  *注意* 记得保存文件
 
 2. 使用⇧⌘B(同时按住Shift+Command+B)进行编译：
 

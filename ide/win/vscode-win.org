@@ -61,7 +61,7 @@
 
 2. 将.vscode目录下载下来并放到这个目录下
 
-  [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
+  [[https://github.com/linc5403/c/tree/master/ide/win/.vscode][.vscode目录]]
 
   下载和拷贝完成后你的工作目录应该是这个样子的：
 
@@ -73,9 +73,11 @@
       └── tasks.json
   #+end_example
 
+  *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
+
 3. 用VS Code打开这个目录
 
-   就是命令行下进入c-projects目录，然后执行 ~code .~ 命令：
+   就是在cygwin中进入c-projects目录，然后执行 ~code .~ 命令（注意这个小点点不要忘了）：
 
    #+begin_example
      bash-3.2$ cd c-projects/
@@ -105,7 +107,9 @@
 
   [[./img/hello-code.png]]
 
-2. 使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译：
+  *注意* 记得保存文件
+
+2. 使用Ctrl+Shift+B(同时按住Ctrl，Shift和B这三个键)进行编译, 选择出现的 ~gcc.exe build active file~ ：
 
    [[./img/compile.png]]
 
@@ -113,7 +117,7 @@
 
    #+begin_example
      bash-3.2$ ls
-     hello           hello.c         hello.dSYM
+     hello           hello.c
    #+end_example
 
 4. 通过 ~./hello~ 执行该文件
