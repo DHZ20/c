@@ -94,7 +94,7 @@
 
    此时应该可以出现VS Code的界面，同时加载了c-projects目录：
 
-   [[../img/vs-code-startup.png]]
+   [[./img/vs-code-startup.png]]
 
 * Hello, World
 
