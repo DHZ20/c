@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [安装clang](#org9c71925)
-    1.  [检查是否已经安装clang](#org6c4e2ee)
-    2.  [安装clang](#org4a6490c)
-2.  [下载VS Code并安装](#orgceb8bae)
-3.  [安装VS Code C/C++插件](#orgac4ec95)
-4.  [添加VS Code到PATH](#orgb35e5e5)
-5.  [配置VS Code的C语言编译选项](#org6b00e5d)
-6.  [Hello, World](#orgfe38f76)
+1.  [安装clang](#org9f079e2)
+    1.  [检查是否已经安装clang](#org645794c)
+    2.  [安装clang](#orgaa7c179)
+2.  [下载VS Code并安装](#orgf34b11c)
+3.  [安装VS Code C/C++插件](#orgdcf8ba7)
+4.  [添加VS Code到PATH](#orgb478b06)
+5.  [配置VS Code的C语言编译选项](#orgf64ea5d)
+6.  [Hello, World](#org8303c39)
 
 
-<a id="org9c71925"></a>
+<a id="org9f079e2"></a>
 
 # 安装clang
 
 
-<a id="org6c4e2ee"></a>
+<a id="org645794c"></a>
 
 ## 检查是否已经安装clang
 
@@ -28,35 +28,35 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orgceb8bae)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orgf34b11c)。
 
 
-<a id="org4a6490c"></a>
+<a id="orgaa7c179"></a>
 
 ## 安装clang
 
 -   打开终端，输入 `command xcode-select --install`; 并在弹出的窗口中选择 `install`
 
-![img](./img/Clang xcode-select.png)
+![img](./img/Clang-xcode-select.png)
 
 -   接下来的License Agreement对话框中选取Agree：
 
-![img](./img/Clang License Agreement.png)
+![img](./img/Clang-License-Agreement.png)
 
 -   出现下载和安装的界面：
 
-![img](./img/Clang Installing Software.png)
+![img](./img/Clang-Installing-Software.png)
 
 -   安装完成后点击Done：
 
-![img](./img/Clang Installed.png)
+![img](./img/Clang-Installed.png)
 
 -   确认安装完成：
 
-![img](./img/Clang Check version.png)
+![img](./img/Clang-Check-version.png)
 
 
-<a id="orgceb8bae"></a>
+<a id="orgf34b11c"></a>
 
 # 下载VS Code并安装
 
@@ -65,7 +65,7 @@
 选择mac os版本下载并安装
 
 
-<a id="orgac4ec95"></a>
+<a id="orgdcf8ba7"></a>
 
 # 安装VS Code C/C++插件
 
@@ -74,7 +74,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgb35e5e5"></a>
+<a id="orgb478b06"></a>
 
 # 添加VS Code到PATH
 
@@ -88,7 +88,7 @@
 5.  关闭VS Code
 
 
-<a id="org6b00e5d"></a>
+<a id="orgf64ea5d"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -142,7 +142,7 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="orgfe38f76"></a>
+<a id="org8303c39"></a>
 
 # Hello, World
 

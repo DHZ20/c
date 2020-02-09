@@ -18,23 +18,23 @@
 
   - 打开终端，输入 ~command xcode-select --install~; 并在弹出的窗口中选择 ~install~
 
-[[./img/Clang xcode-select.png]]
+[[./img/Clang-xcode-select.png]]
 
   - 接下来的License Agreement对话框中选取Agree：
 
-[[./img/Clang License Agreement.png]]
+[[./img/Clang-License-Agreement.png]]
 
   - 出现下载和安装的界面：
 
-[[./img/Clang Installing Software.png]]
+[[./img/Clang-Installing-Software.png]]
 
   - 安装完成后点击Done：
 
-[[./img/Clang Installed.png]]
+[[./img/Clang-Installed.png]]
 
   - 确认安装完成：
 
-[[./img/Clang Check version.png]]
+[[./img/Clang-Check-version.png]]
 
 * 下载VS Code并安装
 
