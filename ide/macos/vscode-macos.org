@@ -81,7 +81,7 @@
 
   - 命令行下进入到刚才创建好的工程目录,创建.vscode目录，然后copy下载的3个文件到.vscode目录下
 
-    注意下面示例中的~config-files是你下载那3个文件的保存目录
+    注意下面示例中的config-files是你下载那3个文件的保存目录
   
   #+begin_src sh
     cd c-projects
