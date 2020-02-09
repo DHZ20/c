@@ -1,22 +1,24 @@
 
 # Table of Contents
 
-1.  [安装clang](#org9f079e2)
-    1.  [检查是否已经安装clang](#org645794c)
-    2.  [安装clang](#orgaa7c179)
-2.  [下载VS Code并安装](#orgf34b11c)
-3.  [安装VS Code C/C++插件](#orgdcf8ba7)
-4.  [添加VS Code到PATH](#orgb478b06)
-5.  [配置VS Code的C语言编译选项](#orgf64ea5d)
-6.  [Hello, World](#org8303c39)
+1.  [安装clang](#orgeed875e)
+    1.  [检查是否已经安装clang](#org65134f6)
+    2.  [安装clang](#org2b955e2)
+2.  [下载VS Code并安装](#orgcc681af)
+3.  [安装VS Code C/C++插件](#org143ef26)
+4.  [添加VS Code到PATH](#org8d6a2b7)
+5.  [配置VS Code的C语言编译选项](#org5cbb5ca)
+    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#orge44761d)
+    2.  [将.vscode目录下载下来并放到这个目录下](#orgc669f34)
+6.  [Hello, World](#org8a4c96c)
 
 
-<a id="org9f079e2"></a>
+<a id="orgeed875e"></a>
 
 # 安装clang
 
 
-<a id="org645794c"></a>
+<a id="org65134f6"></a>
 
 ## 检查是否已经安装clang
 
@@ -28,10 +30,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orgf34b11c)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orgcc681af)。
 
 
-<a id="orgaa7c179"></a>
+<a id="org2b955e2"></a>
 
 ## 安装clang
 
@@ -56,7 +58,7 @@
 ![img](./img/Clang-Check-version.png)
 
 
-<a id="orgf34b11c"></a>
+<a id="orgcc681af"></a>
 
 # 下载VS Code并安装
 
@@ -65,7 +67,7 @@
 选择mac os版本下载并安装
 
 
-<a id="orgdcf8ba7"></a>
+<a id="org143ef26"></a>
 
 # 安装VS Code C/C++插件
 
@@ -74,7 +76,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgb478b06"></a>
+<a id="org8d6a2b7"></a>
 
 # 添加VS Code到PATH
 
@@ -88,37 +90,46 @@
 5.  关闭VS Code
 
 
-<a id="orgf64ea5d"></a>
+<a id="org5cbb5ca"></a>
 
 # 配置VS Code的C语言编译选项
 
-1.  新建一个目录用于存放C的项目：
-    
-        bash-3.2$ mkdir c-projects
 
-2.  将.vscode目录下载下来并放到这个目录下
-    
-    [.vscode目录](https://github.com/linc5403/c/tree/master/ide/macos/.vscode)
-    
-    -   下载这三个文件，文件右键，选择“链接存储为“
-    
-    ![img](./img/save-config.png)
-    
-    -   例如你存储的位置为Home目录下的config-files，那么应该是这样：
-    
-    ![img](./img/save.png)
-    
-    -   命令行下进入到刚才创建好的工程目录,创建.vscode目录，然后copy下载的3个文件到.vscode目录下
-        
-        注意下面示例中的config-files是你下载那3个文件的保存目录
+<a id="orge44761d"></a>
+
+## 终端（命令行）下新建一个目录用于存放C的项目：
+
+    mkdir c-projects
+
+
+<a id="orgc669f34"></a>
+
+## 将.vscode目录下载下来并放到这个目录下
+
+[.vscode目录](https://github.com/linc5403/c/tree/master/ide/macos/.vscode)
+
+1.  在c项目目录（上一节新建的c-projects目录）下启动VS Code：
     
         cd c-projects
-        mkdir .vscode
-        cp ~/config-files/c_cpp_properties.json .vscode
-        cp ~/config-files/launch.json .vscode
-        cp ~/config-files/tasks.json .vscode
+        code .
     
-    拷贝完成后，你的工程目录应该像这个样子：
+    此时应该可以出现VS的界面
+
+2.  在VS Code中新建.vscode目录：
+    
+    ![img](./img/creat-img.png)
+
+3.  选中.vscode目录, 新建文件（ `c_cpp_properties.json` `launch.json` `tasks.json` ），将github上的3个文件内容分别copy到新建的三个文件中
+    
+    ![img](./img/create-file-1.png)
+    
+    ![img](./img/create-file-2.png)
+    
+    ![img](./img/create-file-3.png)
+
+4.  下载和拷贝完成后你的工作目录应该是这个样子的：
+    
+    ![img](./img/create-file-4.png)
     
         c-projects/
         └── .vscode
@@ -128,21 +139,8 @@
     
     **注意** .vscode是隐藏目录，需要使用 `ls -la` 进行查看
 
-3.  用VS Code打开这个目录
-    
-    就是命令行下进入c-projects目录，然后执行 `code .` 命令：
-    
-        bash-3.2$ cd c-projects/
-        bash-3.2$ pwd
-        /Users/banyuan/c-projects
-        bash-3.2$ code .
-    
-    此时应该可以出现VS Code的界面，同时加载了c-projects目录：
-    
-    ![img](./img/vs-code-startup.png)
 
-
-<a id="org8303c39"></a>
+<a id="org8a4c96c"></a>
 
 # Hello, World
 

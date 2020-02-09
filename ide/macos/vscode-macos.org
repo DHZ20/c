@@ -61,62 +61,50 @@
 
 * 配置VS Code的C语言编译选项
 
-1. 新建一个目录用于存放C的项目：
+** 终端（命令行）下新建一个目录用于存放C的项目：
 
   #+begin_src shell
-    bash-3.2$ mkdir c-projects
+    mkdir c-projects
   #+end_src
 
-2. 将.vscode目录下载下来并放到这个目录下
+** 将.vscode目录下载下来并放到这个目录下
 
   [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
 
-  - 下载这三个文件，文件右键，选择“链接存储为“
+   1. 在c项目目录（上一节新建的c-projects目录）下启动VS Code：
 
-  [[./img/save-config.png]]
+     #+begin_example
+       cd c-projects
+       code .
+     #+end_example
+    
+     此时应该可以出现VS的界面
 
-  - 例如你存储的位置为Home目录下的config-files，那么应该是这样：
+   2. 在VS Code中新建.vscode目录：
+     
+     [[./img/creat-img.png]]
 
-  [[./img/save.png]]
+   3. 选中.vscode目录, 新建文件（ ~c_cpp_properties.json~ ~launch.json~ ~tasks.json~ ），将github上的3个文件内容分别copy到新建的三个文件中
 
-  - 命令行下进入到刚才创建好的工程目录,创建.vscode目录，然后copy下载的3个文件到.vscode目录下
+     [[./img/create-file-1.png]]
 
-    注意下面示例中的config-files是你下载那3个文件的保存目录
-  
-  #+begin_src sh
-    cd c-projects
-    mkdir .vscode
-    cp ~/config-files/c_cpp_properties.json .vscode
-    cp ~/config-files/launch.json .vscode
-    cp ~/config-files/tasks.json .vscode
-  #+end_src
+     [[./img/create-file-2.png]]
 
-  拷贝完成后，你的工程目录应该像这个样子：
+     [[./img/create-file-3.png]]
+    
+   4. 下载和拷贝完成后你的工作目录应该是这个样子的：
 
-  #+begin_example
-    c-projects/
-    └── .vscode
-      ├── c_cpp_properties.json
-      ├── launch.json
-      └── tasks.json
-  #+end_example
+     [[./img/create-file-4.png]]
 
-  *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
-
-3. 用VS Code打开这个目录
-
-   就是命令行下进入c-projects目录，然后执行 ~code .~ 命令：
-
-   #+begin_example
-     bash-3.2$ cd c-projects/
-     bash-3.2$ pwd
-     /Users/banyuan/c-projects
-     bash-3.2$ code .
-   #+end_example
-
-   此时应该可以出现VS Code的界面，同时加载了c-projects目录：
-
-   [[./img/vs-code-startup.png]]
+     #+begin_example
+       c-projects/
+       └── .vscode
+         ├── c_cpp_properties.json
+         ├── launch.json
+         └── tasks.json
+     #+end_example
+   
+     *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
 
 * Hello, World
 

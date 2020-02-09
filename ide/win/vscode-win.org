@@ -34,7 +34,11 @@
 
 ** 添加cygwin到windows的PATH中
 
+1. 打开windows环境变量设置
+
 [[./img/path-config-1.png]]
+
+2. 添加cygwin的bin目录到环境变量
 
 [[./img/path-config-2.png]]
 
@@ -56,42 +60,50 @@
 
 * 配置VS Code的C语言编译选项
 
-1. cygwin下新建一个目录用于存放C的项目：
+** cygwin下新建一个目录用于存放C的项目：
 
   #+begin_src shell
-    bash-3.2$ mkdir c-projects
+    mkdir c-projects
   #+end_src
 
-2. 将.vscode目录下载下来并放到这个目录下
+** 将.vscode目录下载下来并放到这个目录下
 
   [[https://github.com/linc5403/c/tree/master/ide/win/.vscode][.vscode目录]]
 
-  下载和拷贝完成后你的工作目录应该是这个样子的：
+   1. 在c项目目录（c-projects）下启动VS Code：
 
-  #+begin_example
-    c-projects/
-    └── .vscode
-      ├── c_cpp_properties.json
-      ├── launch.json
-      └── tasks.json
-  #+end_example
+     #+begin_example
+       cd c-projects
+       code .
+     #+end_example
+    
+     此时应该可以出现VS的界面
 
-  *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
+   2. 在VS Code中新建.vscode目录：
+     
+     [[./img/creat-img.png]]
 
-3. 用VS Code打开这个目录
+   3. 选中.vscode目录, 新建文件（ ~c_cpp_properties.json~ ~launch.json~ ~tasks.json~ ），将github上的3个文件内容分别copy到新建的三个文件中
 
-   就是在cygwin中进入c-projects目录，然后执行 ~code .~ 命令（注意这个小点点不要忘了）：
+     [[./img/create-file-1.png]]
 
-   #+begin_example
-     bash-3.2$ cd c-projects/
-     bash-3.2$ pwd
-     /Users/banyuan/c-projects
-     bash-3.2$ code .
-   #+end_example
+     [[./img/create-file-2.png]]
 
-   此时应该可以出现VS Code的界面，同时加载了c-projects目录：
+     [[./img/create-file-3.png]]
+    
+   4. 下载和拷贝完成后你的工作目录应该是这个样子的：
 
-   [[./img/vs-code-startup.png]]
+     [[./img/create-file-4.png]]
+
+     #+begin_example
+       c-projects/
+       └── .vscode
+         ├── c_cpp_properties.json
+         ├── launch.json
+         └── tasks.json
+     #+end_example
+   
+     *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
 
 * Hello, World
 
