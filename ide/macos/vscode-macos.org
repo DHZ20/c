@@ -71,7 +71,27 @@
 
   [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
 
-  下载和拷贝完成后你的工作目录应该是这个样子的：
+  - 下载这三个文件，文件右键，选择“链接存储为“
+
+  [[./img/save-config.png]]
+
+  - 例如你存储的位置为Home目录下的config-files，那么应该是这样：
+
+  [[./img/save.png]]
+
+  - 命令行下进入到刚才创建好的工程目录,创建.vscode目录，然后copy下载的3个文件到.vscode目录下
+
+    注意下面示例中的~config-files是你下载那3个文件的保存目录
+  
+  #+begin_example
+    cd c-projects
+    mkdir .vscode
+    cp ~/config-files/c_cpp_properties.json .vscode
+    cp ~/config-files/launch.json .vscode
+    cp ~/config-files/tasks.json .vscode
+  #+end_example
+
+  拷贝完成后，你的工程目录应该像这个样子：
 
   #+begin_example
     c-projects/

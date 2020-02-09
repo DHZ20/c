@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [安装clang](#org0683f84)
-    1.  [检查是否已经安装clang](#org6872f2b)
-    2.  [安装clang](#org08aef50)
-2.  [下载VS Code并安装](#org9d302d7)
-3.  [安装VS Code C/C++插件](#org18f138c)
-4.  [添加VS Code到PATH](#org3d5f439)
-5.  [配置VS Code的C语言编译选项](#orgf23f360)
-6.  [Hello, World](#org72462db)
+1.  [安装clang](#org8076e4f)
+    1.  [检查是否已经安装clang](#org219c99e)
+    2.  [安装clang](#orge497509)
+2.  [下载VS Code并安装](#orgd4621c6)
+3.  [安装VS Code C/C++插件](#orgb20b38d)
+4.  [添加VS Code到PATH](#orgdce68de)
+5.  [配置VS Code的C语言编译选项](#orga4089aa)
+6.  [Hello, World](#org45575cc)
 
 
-<a id="org0683f84"></a>
+<a id="org8076e4f"></a>
 
 # 安装clang
 
 
-<a id="org6872f2b"></a>
+<a id="org219c99e"></a>
 
 ## 检查是否已经安装clang
 
@@ -28,10 +28,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org9d302d7)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orgd4621c6)。
 
 
-<a id="org08aef50"></a>
+<a id="orge497509"></a>
 
 ## 安装clang
 
@@ -56,7 +56,7 @@
 ![img](./img/Clang Check version.png)
 
 
-<a id="org9d302d7"></a>
+<a id="orgd4621c6"></a>
 
 # 下载VS Code并安装
 
@@ -65,7 +65,7 @@
 选择mac os版本下载并安装
 
 
-<a id="org18f138c"></a>
+<a id="orgb20b38d"></a>
 
 # 安装VS Code C/C++插件
 
@@ -74,7 +74,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="org3d5f439"></a>
+<a id="orgdce68de"></a>
 
 # 添加VS Code到PATH
 
@@ -88,7 +88,7 @@
 5.  关闭VS Code
 
 
-<a id="orgf23f360"></a>
+<a id="orga4089aa"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -100,7 +100,25 @@
     
     [.vscode目录](https://github.com/linc5403/c/tree/master/ide/macos/.vscode)
     
-    下载和拷贝完成后你的工作目录应该是这个样子的：
+    -   下载这三个文件，文件右键，选择“链接存储为“
+    
+    ![img](./img/save-config.png)
+    
+    -   例如你存储的位置为Home目录下的config-files，那么应该是这样：
+    
+    ![img](./img/save.png)
+    
+    -   命令行下进入到刚才创建好的工程目录,创建.vscode目录，然后copy下载的3个文件到.vscode目录下
+        
+        注意下面示例中的~config-files是你下载那3个文件的保存目录
+    
+        cd c-projects
+        mkdir .vscode
+        cp ~/config-files/c_cpp_properties.json .vscode
+        cp ~/config-files/launch.json .vscode
+        cp ~/config-files/tasks.json .vscode
+    
+    拷贝完成后，你的工程目录应该像这个样子：
     
         c-projects/
         └── .vscode
@@ -124,7 +142,7 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="org72462db"></a>
+<a id="org45575cc"></a>
 
 # Hello, World
 
