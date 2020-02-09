@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [安装clang](#org8076e4f)
-    1.  [检查是否已经安装clang](#org219c99e)
-    2.  [安装clang](#orge497509)
-2.  [下载VS Code并安装](#orgd4621c6)
-3.  [安装VS Code C/C++插件](#orgb20b38d)
-4.  [添加VS Code到PATH](#orgdce68de)
-5.  [配置VS Code的C语言编译选项](#orga4089aa)
-6.  [Hello, World](#org45575cc)
+1.  [安装clang](#org1ac3f6f)
+    1.  [检查是否已经安装clang](#org03bb495)
+    2.  [安装clang](#org4bba0cf)
+2.  [下载VS Code并安装](#org9990245)
+3.  [安装VS Code C/C++插件](#orged327b2)
+4.  [添加VS Code到PATH](#orge837b27)
+5.  [配置VS Code的C语言编译选项](#org6fe9103)
+6.  [Hello, World](#org0eb7551)
 
 
-<a id="org8076e4f"></a>
+<a id="org1ac3f6f"></a>
 
 # 安装clang
 
 
-<a id="org219c99e"></a>
+<a id="org03bb495"></a>
 
 ## 检查是否已经安装clang
 
@@ -28,10 +28,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orgd4621c6)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org9990245)。
 
 
-<a id="orge497509"></a>
+<a id="org4bba0cf"></a>
 
 ## 安装clang
 
@@ -56,7 +56,7 @@
 ![img](./img/Clang Check version.png)
 
 
-<a id="orgd4621c6"></a>
+<a id="org9990245"></a>
 
 # 下载VS Code并安装
 
@@ -65,7 +65,7 @@
 选择mac os版本下载并安装
 
 
-<a id="orgb20b38d"></a>
+<a id="orged327b2"></a>
 
 # 安装VS Code C/C++插件
 
@@ -74,7 +74,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgdce68de"></a>
+<a id="orge837b27"></a>
 
 # 添加VS Code到PATH
 
@@ -88,7 +88,7 @@
 5.  关闭VS Code
 
 
-<a id="orga4089aa"></a>
+<a id="org6fe9103"></a>
 
 # 配置VS Code的C语言编译选项
 
@@ -142,7 +142,7 @@
     ![img](./img/vs-code-startup.png)
 
 
-<a id="org45575cc"></a>
+<a id="org0eb7551"></a>
 
 # Hello, World
 

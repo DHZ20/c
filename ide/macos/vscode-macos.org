@@ -83,13 +83,13 @@
 
     注意下面示例中的~config-files是你下载那3个文件的保存目录
   
-  #+begin_example
+  #+begin_src sh
     cd c-projects
     mkdir .vscode
     cp ~/config-files/c_cpp_properties.json .vscode
     cp ~/config-files/launch.json .vscode
     cp ~/config-files/tasks.json .vscode
-  #+end_example
+  #+end_src
 
   拷贝完成后，你的工程目录应该像这个样子：
 
