@@ -81,7 +81,7 @@
 
    2. 在VS Code中新建.vscode目录：
      
-     [[./img/creat-img.png]]
+     [[./img/creat-dir.png]]
 
    3. 选中.vscode目录, 新建文件（ ~c_cpp_properties.json~ ~launch.json~ ~tasks.json~ ），将github上的3个文件内容分别copy到新建的三个文件中
 
