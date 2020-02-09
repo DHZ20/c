@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-09 Sun 16:56 -->
+<!-- 2020-02-09 Sun 16:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -246,31 +246,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org850eb39">1. 安装clang</a>
+<li><a href="#org36f2b69">1. 安装clang</a>
 <ul>
-<li><a href="#org9d0f342">1.1. 检查是否已经安装clang</a></li>
-<li><a href="#org570fe18">1.2. 安装clang</a></li>
+<li><a href="#orgd42e48d">1.1. 检查是否已经安装clang</a></li>
+<li><a href="#org8e120a7">1.2. 安装clang</a></li>
 </ul>
 </li>
-<li><a href="#org11498d7">2. 下载VS Code并安装</a></li>
-<li><a href="#org1eb1c38">3. 安装VS Code C/C++插件</a></li>
-<li><a href="#orgea4f261">4. 添加VS Code到PATH</a></li>
-<li><a href="#org7204318">5. 配置VS Code的C语言编译选项</a>
+<li><a href="#orgc3b68d5">2. 下载VS Code并安装</a></li>
+<li><a href="#org6230534">3. 安装VS Code C/C++插件</a></li>
+<li><a href="#orga917a66">4. 添加VS Code到PATH</a></li>
+<li><a href="#orgfae18da">5. 配置VS Code的C语言编译选项</a>
 <ul>
-<li><a href="#orgadf59e0">5.1. 终端（命令行）下新建一个目录用于存放C的项目：</a></li>
-<li><a href="#orga3da711">5.2. 将.vscode目录下载下来并放到这个目录下</a></li>
+<li><a href="#orgb917095">5.1. 终端（命令行）下新建一个目录用于存放C的项目：</a></li>
+<li><a href="#org435a559">5.2. 将.vscode目录下载下来并放到这个目录下</a></li>
 </ul>
 </li>
-<li><a href="#org573aa0c">6. Hello, World</a></li>
+<li><a href="#org2dced66">6. Hello, World</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org850eb39" class="outline-2">
-<h2 id="org850eb39"><span class="section-number-2">1</span> 安装clang</h2>
+<div id="outline-container-org36f2b69" class="outline-2">
+<h2 id="org36f2b69"><span class="section-number-2">1</span> 安装clang</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org9d0f342" class="outline-3">
-<h3 id="org9d0f342"><span class="section-number-3">1.1</span> 检查是否已经安装clang</h3>
+<div id="outline-container-orgd42e48d" class="outline-3">
+<h3 id="orgd42e48d"><span class="section-number-3">1.1</span> 检查是否已经安装clang</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 终端命令行下输入： <code>clang --version</code> 
@@ -285,13 +285,13 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 </pre>
 
 <p>
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始<a href="#org11498d7">下载VS Code并安装</a>。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始<a href="#orgc3b68d5">下载VS Code并安装</a>。
 </p>
 </div>
 </div>
 
-<div id="outline-container-org570fe18" class="outline-3">
-<h3 id="org570fe18"><span class="section-number-3">1.2</span> 安装clang</h3>
+<div id="outline-container-org8e120a7" class="outline-3">
+<h3 id="org8e120a7"><span class="section-number-3">1.2</span> 安装clang</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>打开终端，输入 <code>command xcode-select --install</code>; 并在弹出的窗口中选择 <code>install</code></li>
@@ -346,8 +346,8 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 </div>
 </div>
 
-<div id="outline-container-org11498d7" class="outline-2">
-<h2 id="org11498d7"><span class="section-number-2">2</span> 下载VS Code并安装</h2>
+<div id="outline-container-orgc3b68d5" class="outline-2">
+<h2 id="orgc3b68d5"><span class="section-number-2">2</span> 下载VS Code并安装</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="https://code.visualstudio.com/download">下载链接</a>
@@ -359,8 +359,8 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 </div>
 </div>
 
-<div id="outline-container-org1eb1c38" class="outline-2">
-<h2 id="org1eb1c38"><span class="section-number-2">3</span> 安装VS Code C/C++插件</h2>
+<div id="outline-container-org6230534" class="outline-2">
+<h2 id="org6230534"><span class="section-number-2">3</span> 安装VS Code C/C++插件</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 打开visual Studio Code，安装c/c++插件:
@@ -374,8 +374,8 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 </div>
 </div>
 
-<div id="outline-container-orgea4f261" class="outline-2">
-<h2 id="orgea4f261"><span class="section-number-2">4</span> 添加VS Code到PATH</h2>
+<div id="outline-container-orga917a66" class="outline-2">
+<h2 id="orga917a66"><span class="section-number-2">4</span> 添加VS Code到PATH</h2>
 <div class="outline-text-2" id="text-4">
 <ol class="org-ol">
 <li>打开VS code</li>
@@ -396,12 +396,12 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 </div>
 </div>
 
-<div id="outline-container-org7204318" class="outline-2">
-<h2 id="org7204318"><span class="section-number-2">5</span> 配置VS Code的C语言编译选项</h2>
+<div id="outline-container-orgfae18da" class="outline-2">
+<h2 id="orgfae18da"><span class="section-number-2">5</span> 配置VS Code的C语言编译选项</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgadf59e0" class="outline-3">
-<h3 id="orgadf59e0"><span class="section-number-3">5.1</span> 终端（命令行）下新建一个目录用于存放C的项目：</h3>
+<div id="outline-container-orgb917095" class="outline-3">
+<h3 id="orgb917095"><span class="section-number-3">5.1</span> 终端（命令行）下新建一个目录用于存放C的项目：</h3>
 <div class="outline-text-3" id="text-5-1">
 <div class="org-src-container">
 <pre class="src src-shell">mkdir c-projects
@@ -410,8 +410,8 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 </div>
 </div>
 
-<div id="outline-container-orga3da711" class="outline-3">
-<h3 id="orga3da711"><span class="section-number-3">5.2</span> 将.vscode目录下载下来并放到这个目录下</h3>
+<div id="outline-container-org435a559" class="outline-3">
+<h3 id="org435a559"><span class="section-number-3">5.2</span> 将.vscode目录下载下来并放到这个目录下</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 <a href="https://github.com/linc5403/c/tree/master/ide/macos/.vscode">.vscode目录</a>
@@ -437,7 +437,7 @@ code .
 
 
 <div class="figure">
-<p><img src="./img/creat-dir.png" alt="creat-dir.png" />
+<p><img src="./img/create-dir.png" alt="create-dir.png" />
 </p>
 </div></li>
 
@@ -489,8 +489,8 @@ c-projects/
 </div>
 </div>
 
-<div id="outline-container-org573aa0c" class="outline-2">
-<h2 id="org573aa0c"><span class="section-number-2">6</span> Hello, World</h2>
+<div id="outline-container-org2dced66" class="outline-2">
+<h2 id="org2dced66"><span class="section-number-2">6</span> Hello, World</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 创建你的第一个C程序并运行吧：
@@ -555,7 +555,7 @@ hello           hello.c         hello.dSYM
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: lin chuan</p>
-<p class="date">Created: 2020-02-09 Sun 16:56</p>
+<p class="date">Created: 2020-02-09 Sun 16:58</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

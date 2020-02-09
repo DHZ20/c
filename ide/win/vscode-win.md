@@ -1,27 +1,27 @@
 
 # Table of Contents
 
-1.  [安装cygwin](#org19e6df0)
-    1.  [下载安装文件](#org840dc24)
-    2.  [安装cygwin](#org7997f21)
-        1.  [next到选择站点的时候添加163的地址](#org74f996c)
-        2.  [选择gcc和相关软件进行安装](#org82e5283)
-        3.  [完成后的确认](#org413c854)
-    3.  [添加cygwin到windows的PATH中](#orgafcf580)
-2.  [下载VS Code并安装](#orgc3fc779)
-3.  [安装VS Code C/C++插件](#org32f86c4)
-4.  [配置VS Code的C语言编译选项](#org6f63588)
-    1.  [cygwin下新建一个目录用于存放C的项目：](#org76f9998)
-    2.  [将.vscode目录下载下来并放到这个目录下](#org029a833)
-5.  [Hello, World](#orga4070e9)
+1.  [安装cygwin](#org798d53c)
+    1.  [下载安装文件](#org16ec86e)
+    2.  [安装cygwin](#org798cc87)
+        1.  [next到选择站点的时候添加163的地址](#orged5419c)
+        2.  [选择gcc和相关软件进行安装](#orgdca9ac2)
+        3.  [完成后的确认](#orgdd0fe3a)
+    3.  [添加cygwin到windows的PATH中](#orgea6d5fa)
+2.  [下载VS Code并安装](#org8161cfc)
+3.  [安装VS Code C/C++插件](#orga552ad8)
+4.  [配置VS Code的C语言编译选项](#orgd3701fe)
+    1.  [cygwin下新建一个目录用于存放C的项目：](#org0d11328)
+    2.  [将.vscode目录下载下来并放到这个目录下](#org019c334)
+5.  [Hello, World](#org28820c5)
 
 
-<a id="org19e6df0"></a>
+<a id="org798d53c"></a>
 
 # 安装cygwin
 
 
-<a id="org840dc24"></a>
+<a id="org16ec86e"></a>
 
 ## 下载安装文件
 
@@ -32,12 +32,12 @@
 [我的github下载](https://github.com/linc5403/c/blob/master/ide/win/setup-x86_64.exe)
 
 
-<a id="org7997f21"></a>
+<a id="org798cc87"></a>
 
 ## 安装cygwin
 
 
-<a id="org74f996c"></a>
+<a id="orged5419c"></a>
 
 ### next到选择站点的时候添加163的地址
 
@@ -46,7 +46,7 @@
 ![img](./img/cygwin-add-163.png)
 
 
-<a id="org82e5283"></a>
+<a id="orgdca9ac2"></a>
 
 ### 选择gcc和相关软件进行安装
 
@@ -59,7 +59,7 @@
 ![img](./img/cygwin-select-make-full.png)
 
 
-<a id="org413c854"></a>
+<a id="orgdd0fe3a"></a>
 
 ### 完成后的确认
 
@@ -68,7 +68,7 @@
 ![img](./img/start-gcc.png)
 
 
-<a id="orgafcf580"></a>
+<a id="orgea6d5fa"></a>
 
 ## 添加cygwin到windows的PATH中
 
@@ -81,7 +81,7 @@
 ![img](./img/path-config-2.png)
 
 
-<a id="orgc3fc779"></a>
+<a id="org8161cfc"></a>
 
 # 下载VS Code并安装
 
@@ -94,7 +94,7 @@
 安装的时候一路Next就可以了， **重点:安装完成后需要重启电脑** ，因为需要将VS Code添加到系统路径中。
 
 
-<a id="org32f86c4"></a>
+<a id="orga552ad8"></a>
 
 # 安装VS Code C/C++插件
 
@@ -103,19 +103,19 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="org6f63588"></a>
+<a id="orgd3701fe"></a>
 
 # 配置VS Code的C语言编译选项
 
 
-<a id="org76f9998"></a>
+<a id="org0d11328"></a>
 
 ## cygwin下新建一个目录用于存放C的项目：
 
     mkdir c-projects
 
 
-<a id="org029a833"></a>
+<a id="org019c334"></a>
 
 ## 将.vscode目录下载下来并放到这个目录下
 
@@ -130,7 +130,7 @@
 
 2.  在VS Code中新建.vscode目录：
     
-    ![img](./img/creat-dir.png)
+    ![img](./img/create-dir.png)
 
 3.  选中.vscode目录, 新建文件（ `c_cpp_properties.json` `launch.json` `tasks.json` ），将github上的3个文件内容分别copy到新建的三个文件中
     
@@ -153,7 +153,7 @@
     **注意** .vscode是隐藏目录，需要使用 `ls -la` 进行查看
 
 
-<a id="orga4070e9"></a>
+<a id="org28820c5"></a>
 
 # Hello, World
 

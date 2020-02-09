@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [安装clang](#orgbd52088)
-    1.  [检查是否已经安装clang](#orge226dd2)
-    2.  [安装clang](#orga001bdb)
-2.  [下载VS Code并安装](#orge32b338)
-3.  [安装VS Code C/C++插件](#orgf074015)
-4.  [添加VS Code到PATH](#orgaba0ba7)
-5.  [配置VS Code的C语言编译选项](#org437d35b)
-    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#orgdd0bdb8)
-    2.  [将.vscode目录下载下来并放到这个目录下](#orgea8d182)
-6.  [Hello, World](#org843f66d)
+1.  [安装clang](#org6451c90)
+    1.  [检查是否已经安装clang](#orgdb89390)
+    2.  [安装clang](#org3c13d17)
+2.  [下载VS Code并安装](#org0e97802)
+3.  [安装VS Code C/C++插件](#org96b21dd)
+4.  [添加VS Code到PATH](#orgad9ccad)
+5.  [配置VS Code的C语言编译选项](#org0c7e661)
+    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#org6b751c7)
+    2.  [将.vscode目录下载下来并放到这个目录下](#org13b3118)
+6.  [Hello, World](#orgfd5108f)
 
 
-<a id="orgbd52088"></a>
+<a id="org6451c90"></a>
 
 # 安装clang
 
 
-<a id="orge226dd2"></a>
+<a id="orgdb89390"></a>
 
 ## 检查是否已经安装clang
 
@@ -30,10 +30,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#orge32b338)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org0e97802)。
 
 
-<a id="orga001bdb"></a>
+<a id="org3c13d17"></a>
 
 ## 安装clang
 
@@ -58,7 +58,7 @@
 ![img](./img/Clang-Check-version.png)
 
 
-<a id="orge32b338"></a>
+<a id="org0e97802"></a>
 
 # 下载VS Code并安装
 
@@ -67,7 +67,7 @@
 选择mac os版本下载并安装
 
 
-<a id="orgf074015"></a>
+<a id="org96b21dd"></a>
 
 # 安装VS Code C/C++插件
 
@@ -76,7 +76,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgaba0ba7"></a>
+<a id="orgad9ccad"></a>
 
 # 添加VS Code到PATH
 
@@ -90,19 +90,19 @@
 5.  关闭VS Code
 
 
-<a id="org437d35b"></a>
+<a id="org0c7e661"></a>
 
 # 配置VS Code的C语言编译选项
 
 
-<a id="orgdd0bdb8"></a>
+<a id="org6b751c7"></a>
 
 ## 终端（命令行）下新建一个目录用于存放C的项目：
 
     mkdir c-projects
 
 
-<a id="orgea8d182"></a>
+<a id="org13b3118"></a>
 
 ## 将.vscode目录下载下来并放到这个目录下
 
@@ -117,7 +117,7 @@
 
 2.  在VS Code中新建.vscode目录：
     
-    ![img](./img/creat-dir.png)
+    ![img](./img/create-dir.png)
 
 3.  选中.vscode目录, 新建文件（ `c_cpp_properties.json` `launch.json` `tasks.json` ），将github上的3个文件内容分别copy到新建的三个文件中
     
@@ -140,7 +140,7 @@
     **注意** .vscode是隐藏目录，需要使用 `ls -la` 进行查看
 
 
-<a id="org843f66d"></a>
+<a id="orgfd5108f"></a>
 
 # Hello, World
 
