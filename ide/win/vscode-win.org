@@ -35,28 +35,28 @@
 ** 添加cygwin到windows的PATH中
 
 1. 打开windows环境变量设置
-
-[[./img/path-config-1.png]]
+   
+   [[./img/path-config-1.png]]
 
 2. 添加cygwin的bin目录到环境变量
-
-[[./img/path-config-2.png]]
+   
+   [[./img/path-config-2.png]]
 
 * 下载VS Code并安装
 
-[[https://code.visualstudio.com/download][下载链接]]
+  [[https://code.visualstudio.com/download][下载链接]]
 
-选择User Installer -> 64bit下载并安装：
+  选择User Installer -> 64bit下载并安装：
 
-[[./img/download-win-64-user.png]]
+  [[./img/download-win-64-user.png]]
 
-安装的时候一路Next就可以了， *重点:安装完成后需要重启电脑* ，因为需要将VS Code添加到系统路径中。
+  安装的时候一路Next就可以了， *重点:安装完成后需要重启电脑* ，因为需要将VS Code添加到系统路径中。
 
 * 安装VS Code C/C++插件
 
-打开visual Studio Code，安装c/c++插件:
+  打开visual Studio Code，安装c/c++插件:
 
-[[./img/vs-install-plugin.png]]
+  [[./img/vs-install-plugin.png]]
 
 * 配置VS Code的C语言编译选项
 
