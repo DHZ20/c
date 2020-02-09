@@ -32,6 +32,12 @@
 
 [[./img/start-gcc.png]]
 
+** 添加cygwin到windows的PATH中
+
+[[./img/path-config-1.png]]
+
+[[./img/path-config-2.png]]
+
 * 下载VS Code并安装
 
 [[https://code.visualstudio.com/download][下载链接]]
@@ -47,7 +53,6 @@
 打开visual Studio Code，安装c/c++插件:
 
 [[./img/vs-install-plugin.png]]
-
 
 * 配置VS Code的C语言编译选项
 
@@ -102,8 +107,6 @@
 	   return 0;
        }
    #+end_src
-
-
 
   [[./img/hello-code.png]]
 
