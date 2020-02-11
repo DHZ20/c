@@ -69,6 +69,8 @@
 
 ** 将.vscode目录下载下来并放到这个目录下
 
+** 
+
   [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
 
    1. 在c项目目录（上一节新建的c-projects目录）下启动VS Code：
@@ -106,6 +108,28 @@
    
      *注意* .vscode是隐藏目录，需要使用 ~ls -la~ 进行查看
 
+** (可选)安装lldb插件
+
+对于MacOS,有可能会出现debug无法在断点时暂停的情况，此时你需要安装lldb的插件来进行debug。
+
+1. 下载该插件：
+   
+  [[https://github.com/vadimcn/vscode-lldb/releases/download/v1.4.5/vscode-lldb-x86_64-darwin.vsix][vs-code-lldb插件]]
+
+2. 使用⇧⌘P（同时按住Shift+Command+P）打开VS code命令行并输入 ~install from~ ，选择出现的 ~install form VSIX...~
+
+  [[./img/select-debug-extension.png]]
+
+3. 在弹出的窗口中选择之前下载的文件 ~vscode-lldb-x86_64-darwin.vsix~ 
+
+  [[./img/select-debug-file.png]]
+
+4. 安装后的检查：
+
+  安装完成后应在VS Code的插件栏出现lldb插件 ~CodeLLDB~ ：
+
+  [[./img/show-lldb.png]]
+
 * Hello, World
 
 创建你的第一个C程序并运行吧：
@@ -114,12 +138,6 @@
 
   #+begin_src c
     #include <stdio.h>
-  
-    int main(int argc, char** argv) {
-        printf("Hello, world!\n");
-        return 0;
-    }
-  #+end_src
 
   [[./img/hello-code.png]]
 
