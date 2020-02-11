@@ -69,8 +69,6 @@
 
 ** 将.vscode目录下载下来并放到这个目录下
 
-** 
-
   [[https://github.com/linc5403/c/tree/master/ide/macos/.vscode][.vscode目录]]
 
    1. 在c项目目录（上一节新建的c-projects目录）下启动VS Code：

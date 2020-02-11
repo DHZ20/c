@@ -1,26 +1,25 @@
 
 # Table of Contents
 
-1.  [安装clang](#org8103c10)
-    1.  [检查是否已经安装clang](#org61c3428)
-    2.  [安装clang](#org70579e5)
-2.  [下载VS Code并安装](#org9855466)
-3.  [安装VS Code C/C++插件](#org4cd05e8)
-4.  [添加VS Code到PATH](#orgf16ff59)
-5.  [配置VS Code的C语言编译选项](#orgcb2db0a)
-    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#orgbf4c71d)
-    2.  [将.vscode目录下载下来并放到这个目录下](#orgb788ca4)
-    3.  [](#org700611d)
-    4.  [(可选)安装lldb插件](#orgff265b5)
-6.  [Hello, World](#orgbccf194)
+1.  [安装clang](#org6db4643)
+    1.  [检查是否已经安装clang](#orgb147e44)
+    2.  [安装clang](#orge4e2eb4)
+2.  [下载VS Code并安装](#org96c6af1)
+3.  [安装VS Code C/C++插件](#org4a94270)
+4.  [添加VS Code到PATH](#org20ab30a)
+5.  [配置VS Code的C语言编译选项](#org184bb81)
+    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#orgfec9197)
+    2.  [将.vscode目录下载下来并放到这个目录下](#org36e19bd)
+    3.  [(可选)安装lldb插件](#org91313e8)
+6.  [Hello, World](#org73ec737)
 
 
-<a id="org8103c10"></a>
+<a id="org6db4643"></a>
 
 # 安装clang
 
 
-<a id="org61c3428"></a>
+<a id="orgb147e44"></a>
 
 ## 检查是否已经安装clang
 
@@ -32,10 +31,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org9855466)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org96c6af1)。
 
 
-<a id="org70579e5"></a>
+<a id="orge4e2eb4"></a>
 
 ## 安装clang
 
@@ -60,7 +59,7 @@
 ![img](./img/Clang-Check-version.png)
 
 
-<a id="org9855466"></a>
+<a id="org96c6af1"></a>
 
 # 下载VS Code并安装
 
@@ -69,7 +68,7 @@
 选择mac os版本下载并安装
 
 
-<a id="org4cd05e8"></a>
+<a id="org4a94270"></a>
 
 # 安装VS Code C/C++插件
 
@@ -78,7 +77,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgf16ff59"></a>
+<a id="org20ab30a"></a>
 
 # 添加VS Code到PATH
 
@@ -92,26 +91,21 @@
 5.  关闭VS Code
 
 
-<a id="orgcb2db0a"></a>
+<a id="org184bb81"></a>
 
 # 配置VS Code的C语言编译选项
 
 
-<a id="orgbf4c71d"></a>
+<a id="orgfec9197"></a>
 
 ## 终端（命令行）下新建一个目录用于存放C的项目：
 
     mkdir c-projects
 
 
-<a id="orgb788ca4"></a>
+<a id="org36e19bd"></a>
 
 ## 将.vscode目录下载下来并放到这个目录下
-
-
-<a id="org700611d"></a>
-
-## 
 
 [.vscode目录](https://github.com/linc5403/c/tree/master/ide/macos/.vscode)
 
@@ -147,7 +141,7 @@
     **注意** .vscode是隐藏目录，需要使用 `ls -la` 进行查看
 
 
-<a id="orgff265b5"></a>
+<a id="org91313e8"></a>
 
 ## (可选)安装lldb插件
 
@@ -172,7 +166,7 @@
     ![img](./img/show-lldb.png)
 
 
-<a id="orgbccf194"></a>
+<a id="org73ec737"></a>
 
 # Hello, World
 
