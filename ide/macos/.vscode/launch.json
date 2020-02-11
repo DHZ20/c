@@ -11,6 +11,7 @@
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "cwd": "${workspaceFolder}",
+            "preLaunchTask": "clang build active file"
         },
         {
             "name": "clang build and debug active file",
