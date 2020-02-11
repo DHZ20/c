@@ -1,24 +1,26 @@
 
 # Table of Contents
 
-1.  [安装clang](#org6451c90)
-    1.  [检查是否已经安装clang](#orgdb89390)
-    2.  [安装clang](#org3c13d17)
-2.  [下载VS Code并安装](#org0e97802)
-3.  [安装VS Code C/C++插件](#org96b21dd)
-4.  [添加VS Code到PATH](#orgad9ccad)
-5.  [配置VS Code的C语言编译选项](#org0c7e661)
-    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#org6b751c7)
-    2.  [将.vscode目录下载下来并放到这个目录下](#org13b3118)
-6.  [Hello, World](#orgfd5108f)
+1.  [安装clang](#org8103c10)
+    1.  [检查是否已经安装clang](#org61c3428)
+    2.  [安装clang](#org70579e5)
+2.  [下载VS Code并安装](#org9855466)
+3.  [安装VS Code C/C++插件](#org4cd05e8)
+4.  [添加VS Code到PATH](#orgf16ff59)
+5.  [配置VS Code的C语言编译选项](#orgcb2db0a)
+    1.  [终端（命令行）下新建一个目录用于存放C的项目：](#orgbf4c71d)
+    2.  [将.vscode目录下载下来并放到这个目录下](#orgb788ca4)
+    3.  [](#org700611d)
+    4.  [(可选)安装lldb插件](#orgff265b5)
+6.  [Hello, World](#orgbccf194)
 
 
-<a id="org6451c90"></a>
+<a id="org8103c10"></a>
 
 # 安装clang
 
 
-<a id="orgdb89390"></a>
+<a id="org61c3428"></a>
 
 ## 检查是否已经安装clang
 
@@ -30,10 +32,10 @@
     Thread model: posix
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
-如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org0e97802)。
+如果出现上面的回显，说明已经安装了clang，可以跳过本节，开始[下载VS Code并安装](#org9855466)。
 
 
-<a id="org3c13d17"></a>
+<a id="org70579e5"></a>
 
 ## 安装clang
 
@@ -58,7 +60,7 @@
 ![img](./img/Clang-Check-version.png)
 
 
-<a id="org0e97802"></a>
+<a id="org9855466"></a>
 
 # 下载VS Code并安装
 
@@ -67,7 +69,7 @@
 选择mac os版本下载并安装
 
 
-<a id="org96b21dd"></a>
+<a id="org4cd05e8"></a>
 
 # 安装VS Code C/C++插件
 
@@ -76,7 +78,7 @@
 ![img](./img/vs-install-plugin.png)
 
 
-<a id="orgad9ccad"></a>
+<a id="orgf16ff59"></a>
 
 # 添加VS Code到PATH
 
@@ -90,21 +92,26 @@
 5.  关闭VS Code
 
 
-<a id="org0c7e661"></a>
+<a id="orgcb2db0a"></a>
 
 # 配置VS Code的C语言编译选项
 
 
-<a id="org6b751c7"></a>
+<a id="orgbf4c71d"></a>
 
 ## 终端（命令行）下新建一个目录用于存放C的项目：
 
     mkdir c-projects
 
 
-<a id="org13b3118"></a>
+<a id="orgb788ca4"></a>
 
 ## 将.vscode目录下载下来并放到这个目录下
+
+
+<a id="org700611d"></a>
+
+## 
 
 [.vscode目录](https://github.com/linc5403/c/tree/master/ide/macos/.vscode)
 
@@ -140,7 +147,32 @@
     **注意** .vscode是隐藏目录，需要使用 `ls -la` 进行查看
 
 
-<a id="orgfd5108f"></a>
+<a id="orgff265b5"></a>
+
+## (可选)安装lldb插件
+
+对于MacOS,有可能会出现debug无法在断点时暂停的情况，此时你需要安装lldb的插件来进行debug。
+
+1.  下载该插件：
+    
+    [vs-code-lldb插件](https://github.com/vadimcn/vscode-lldb/releases/download/v1.4.5/vscode-lldb-x86_64-darwin.vsix)
+
+2.  使用⇧⌘P（同时按住Shift+Command+P）打开VS code命令行并输入 `install from` ，选择出现的 `install form VSIX...`
+    
+    ![img](./img/select-debug-extension.png)
+
+3.  在弹出的窗口中选择之前下载的文件 `vscode-lldb-x86_64-darwin.vsix` 
+    
+    ![img](./img/select-debug-file.png)
+
+4.  安装后的检查：
+    
+    安装完成后应在VS Code的插件栏出现lldb插件 `CodeLLDB` ：
+    
+    ![img](./img/show-lldb.png)
+
+
+<a id="orgbccf194"></a>
 
 # Hello, World
 
@@ -150,9 +182,9 @@
     
         #include <stdio.h>
         
-        int main(int argc, char** argv) {
-            printf("Hello, world!\n");
-            return 0;
+        int main() {
+          printf("Hello, world!\n");
+          return 0;
         }
     
     ![img](./img/hello-code.png)
