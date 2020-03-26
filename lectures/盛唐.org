@@ -1,0 +1,64 @@
+* 3/26
+** 作业
+*** 复习8
+    1. 没外网
+    2. 没开机
+    3. 公司防火墙
+*** 复习9
+    #+begin_example
+      服务器 硬件 软件 linux
+      服务器进程 提供服务的程序
+      客户端进程 需要访问外部的资源
+    #+end_example
+
+*** 练习9
+    #+begin_example
+      端口号+IP地址 -> socket -> TCP/UDP
+      http -> 80/8080
+      dns  -> 53
+      https -> 443(ssl)
+    #+end_example
+
+*** URL
+    统一资源定位符
+*** TCP连接
+    #+begin_example
+      pc1 (ip1 + port1)    baidu(ip_baidu + 80)
+    #+end_example
+
+** C第一课
+   #+begin_example
+     事物      事务
+
+     1-100的偶数和
+     2+4+6+8+...+100
+     n
+     sum
+     n 2 -> 100
+     sum <- n
+
+     n = 1
+     当 n <= 100 的时候
+	 如果n是偶数
+	     把n的值加到sum里面去
+	 否则n是奇数
+	     啥都不干
+	 n = n + 1
+
+     此时sum应该就是要的结果
+     输出sum
+
+     顺序 分支 循环
+    
+   #+end_example
+
+
+**** .gitignore
+     #+begin_example
+       * # 不管理任何文件
+       !*/  # 管理文件夹
+       !*.c # 管理.c文件
+       !*.h # 管理.h文件
+       !.gitignore # 管理.gitignore本身
+       !*.md # 管理markdown文件
+     #+end_example
