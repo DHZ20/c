@@ -129,4 +129,70 @@
        else 
            return c;
 
+* 4/1
+** Review
 
+   *统计随机数的分布*
+
+   1. 构造一个数组，存放不同区间的数字个数的统计
+      
+      #+begin_example
+	a[0] 0 ~ 9
+	a[1] 10 ~ 19
+	a[2] 20 ~ 29
+	...
+	a[9] 90 ~ 99
+	a[10] 100
+      #+end_example
+      
+   2. 计算a中最大的数目，用它来作为标准进行*的打印
+      
+      #+begin_src c
+	// 假设a[max] = 16，最多的那一组有16个数字，所以有16个*
+
+	for (int i = a[max]; i > 0; i--) {
+	    for (int j = 0; j < 11; j++) {
+		if (a[j] >= i) {
+		    printf("*");
+		} else {
+		    printf(" ");
+		}
+	    }
+	 }
+
+      #+end_src
+	
+      
+   #+begin_example
+       8 11 12 11  5 16  7 10  9 11  0
+		      ,*
+		      ,*
+		      ,*
+		      ,*     
+	    ,*         *
+	 ,*  *  *                  *   
+   #+end_example
+
+
+** pointer
+
+   #+begin_example
+   int x; 
+     x的地址是0x7ffeefbff51c
+     x的值是1
+   x = 100;
+     x的值变为100 0x00000064
+   int *p = &x;
+     p的值是0x7ffeefbff51c，就是x的地址
+     p的地址是？？0x7ffeefbff510
+     p指向x变量
+   (*p) = (*p) + 1;
+     p指向的东西加1
+   #+end_example
+   
+   #+begin_example
+   a 0x7ffeefbff51c 1
+   b 0x7ffeefbff518 2
+   x 0x7ffeefbff4fc 1
+   y 0x7ffeefbff4f8 2
+   #+end_example
