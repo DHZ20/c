@@ -29,7 +29,6 @@ int find_max_substr(char* s) {
     return i;
 }
 
-
 int lengthOfLongestSubstring(char * s){
     // 初始化
     int max_len = 0;
