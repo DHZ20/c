@@ -78,3 +78,42 @@
 
 ** 使用C进行编程
 ** 分支结构
+* 4/13
+
+                                     h       t
+| 下标 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| 值   |   |   |   |   |   |   |   |   |   |   |
+
+** sort
+
+   #+begin_src c
+     struct notebook {
+       unsigned double price; //按价格排序
+       char* vendor; // 厂家名称
+       struct spec {
+	 // 内存大小
+       };
+       ....
+     } Notebook;
+
+     Notebook notebook_all [10000];
+     Notebook* pAll;
+   #+end_src
+
+   #+begin_src plantuml :file ./img/select.svg
+   @startuml
+   start
+   stop
+   @enduml
+   #+end_src
+
+   #+RESULTS:
+   [[file:./img/select.svg]]
+
+	
+    从n个元素中选择最小的那个，放到0号位置
+    从n-1个元素中选择最小的那个，放到1号位置
+    从n-2个元素中选择最小的那个，放到2号位置	
+    从n-3个元素中选择最小的那个，放到3号位置
+	。。。
+	从2个元素中选择最小的那个，放到n-2号位置
