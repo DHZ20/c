@@ -19,6 +19,9 @@
 
    1) 写出公式L(n); n表示直线数量, L(n)表示通过n根直线可以划分出的最多的空间数量
    2) 使用C语言实现计算L(n)的函数
+      #+begin_src c
+	int calc_spaces(int n); // n >= 0
+      #+end_src
 
 ** 打印三角形
    [[file:./img/triangle.png]]
