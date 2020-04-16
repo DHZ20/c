@@ -37,7 +37,9 @@
        double atof(char *nptr);
      #+end_src
    - 函数描述
+
      atof()会扫描参数nptr字符串，跳过前面的空格字符，直到遇上数字或 ~.~ 符号才开始做转换，而再遇到非数字或字符串结束时('\0')才结束转换，并将结果返回。
+
      以下都是合法输入:
      #+begin_example
        0.123
@@ -49,16 +51,20 @@
      #+end_example
      
      #+begin_example
-     注意: 不考虑 +- 符号
+     注意: 不考虑 +- 符号, 可以不考虑输入非法的情况
      #+end_example
 
 ** 使用栈的数据结构实现队列的功能
-   1) 你有完整的栈的数据结构可以使用
+   1) 你有完整的栈的数据结构可以使用:
+      
       [[https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.c][stack.c]]
+
       [[https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.h][stack.h]]
-   2) 只能使用提供的方法来实现队列的enqueue和dequeue方法 
+
+   2) 只能使用上面文件中提供的方法来实现队列的enqueue和dequeue方法, 函数声明如下:
+
       #+begin_src c
-	enqueue(Queue* queue, int data); // 返回值类型请自己考虑
+	enqueue(Queue* queue, int data); // 函数类型请自己考虑
 	int dequeue(Queue* queue);
       #+end_src
       
