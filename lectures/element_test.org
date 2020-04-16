@@ -6,7 +6,6 @@
    要求:  给出计算方法即可, 不用完整程序
    #+end_example
 
-
 ** 使用直线划分空间
 
    如下图所示:
@@ -23,6 +22,7 @@
 
 ** 打印三角形
    [[file:./img/triangle.png]]
+
    观察上图三角形的规律,实现函数根据输入n打印n行如图所示三角形.
    #+begin_src c
      void draw(unsigned int n); // n > 0
@@ -46,9 +46,8 @@
      #+end_example
      
      #+begin_example
-     提示: 不考虑 +- 符号
+     注意: 不考虑 +- 符号
      #+end_example
-
 
 ** 使用栈的数据结构实现队列的功能
    1) 你有完整的栈的数据结构可以使用
