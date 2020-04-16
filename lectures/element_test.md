@@ -1,15 +1,15 @@
 
 # Table of Contents
 
-1.  [bit运算](#org2596fc4)
-2.  [使用直线划分空间](#org0e24d5e)
-3.  [打印三角形](#org6cf547c)
-4.  [实现atof函数](#org6ce83da)
-5.  [使用栈的数据结构实现队列的功能](#orgfd59376)
+1.  [bit运算](#org1f9acf8)
+2.  [使用直线划分空间](#org16206b9)
+3.  [打印三角形](#orge3e70e0)
+4.  [实现atof函数](#org3fc40f9)
+5.  [使用栈的数据结构实现队列的功能](#orgebf9c51)
 
 
 
-<a id="org2596fc4"></a>
+<a id="org1f9acf8"></a>
 
 # bit运算
 
@@ -18,7 +18,7 @@
     要求:  给出计算方法即可, 不用完整程序
 
 
-<a id="org0e24d5e"></a>
+<a id="org16206b9"></a>
 
 # 使用直线划分空间
 
@@ -38,7 +38,7 @@
         int calc_spaces(int n); // n >= 0
 
 
-<a id="org6cf547c"></a>
+<a id="orge3e70e0"></a>
 
 # 打印三角形
 
@@ -49,15 +49,17 @@
     void draw(unsigned int n); // n > 0
 
 
-<a id="org6ce83da"></a>
+<a id="org3fc40f9"></a>
 
 # 实现atof函数
 
 -   函数定义
     
-        double atof(char *nptr);
+        double my_atof(char *nptr);
 -   函数描述
-    atof()会扫描参数nptr字符串，跳过前面的空格字符，直到遇上数字或 `.` 符号才开始做转换，而再遇到非数字或字符串结束时('\\0')才结束转换，并将结果返回。
+    
+    my<sub>atof</sub>()会扫描参数nptr字符串，跳过前面的空格字符，直到遇上数字或 `.` 符号才开始做转换，而再遇到非数字或字符串结束时('\\0')才结束转换，并将结果返回。
+    
     以下都是合法输入:
     
         0.123
@@ -67,19 +69,22 @@
         0.0
         0.
     
-        注意: 不考虑 +- 符号
+        注意: 不考虑 +- 符号, 不考虑输入非法的情况
 
 
-<a id="orgfd59376"></a>
+<a id="orgebf9c51"></a>
 
 # 使用栈的数据结构实现队列的功能
 
-1.  你有完整的栈的数据结构可以使用
-    [stack.c](https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.c)
-    [stack.h](https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.h)
-2.  只能使用提供的方法来实现队列的enqueue和dequeue方法 
+1.  你有完整的栈的数据结构可以使用:
     
-        enqueue(Queue* queue, int data); // 返回值类型请自己考虑
+    [stack.c](https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.c)
+    
+    [stack.h](https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.h)
+
+2.  只能使用上面文件中提供的方法来实现队列的enqueue和dequeue方法, 函数声明如下:
+    
+        enqueue(Queue* queue, int data); // 函数类型请自己考虑
         int dequeue(Queue* queue);
     
     -   `Queue` 的定义在stack.h文件中
