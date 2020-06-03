@@ -5,21 +5,40 @@
 
    请问最少需要多少个箱子才能满足上述条件？
 
-** 使用折线划分空间
+** 使用直线划分空间
 
    如下图所示:
+   
+   [[file:img/line.png]]
+   
    - 0根直线可以划分出1个空间
    - 1根直线可以划分出2个空间
    - 2根直线可以划分出4个空间
-   
-   [[file:./img/line.png]]
 
    *问题*:
 
-   1) 写出公式L(n); n表示直线数量, L(n)表示通过n根直线可以划分出的最多的空间数量
+   1) 写出公式L(n); n表示折线数量, L(n)表示通过n根折线可以划分出的最多的空间数量
    2) 使用C语言实现计算L(n)的函数
       #+begin_src c
-	int calc_spaces(int n); // n >= 0
+	int calc_line_spaces(int n); // n >= 0
+      #+end_src     
+     
+** 使用折线划分空间
+
+   如下图所示:
+   - 0根折线可以划分出1个空间
+   - 1根折线线可以划分出2个空间
+   - 2根折线最多可以划分出7个空间
+
+   [[file:./img/zline.png]]
+   
+
+   *问题*:
+
+   1) 写出公式Z(n); n表示折线数量, Z(n)表示通过n根折线可以划分出的最多的空间数量
+   2) 使用C语言实现计算Z(n)的函数
+      #+begin_src c
+	int calc_zig_spaces(int n); // n >= 0
       #+end_src
 
 ** 打印三角形
@@ -60,31 +79,31 @@
 
       [[https://github.com/linc5403/ds-c/blob/master/code/02-stack/stack.h][stack.h]]
 
-   2) 只能使用上面文件中提供的方法来实现队列的enqueue和dequeue方法, 函数声明如下:
+   2) 只能使用上面文件中提供的方法来实现队列的enqueue和dequeue方法, 函数声明类似如下:
 
       #+begin_src c
-	enqueue(Queue* queue, int data); // 函数类型请自己考虑
-	int dequeue(Queue* queue);
+	enqueue(Queue* queue, int data); // 函数定义请自己考虑
+	int dequeue(Queue* queue); // 函数定义请自己考虑
       #+end_src
       
-      - ~Queue~ 的定义在stack.h文件中
+      - ~Queue~ 结构体的定义在stack.h文件中
       - 上面的两个函数里面只能调用已有的函数,不能使用其他方法对入参queue进行操作
-      - 测试用例如下:
+      - 测试用例类似如下:
 	#+begin_src c
 	  int main(void) {
 	      Queue* queue = init_stack();
 	      int a[5] = {1, 2, 3, 4, 5};
 	      for( int i = 0; i < 5; i++) {
-		  enqueue(queue, a[i]);
+		  enqueue(queue, a[i]);  // 可按照自己的函数定义进行修改
 	      }
 
 	      for (int i = 0; i < 5; i++) {
-		  int out = dequeue(queue);
+		  int out = dequeue(queue); // 可按照自己的函数定义进行修改
 		  printf("%3d", out);
 	      }
 	      printf("\n");
 	      return 0;
 	  }
         #+end_src
-      
+	
 	程序应当输出类似结果: 1  2  3  4  5
