@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 void draw(unsigned int n){
     int a[100][100];
     int i,j;
@@ -25,5 +27,6 @@ int main(){
     int n;
     printf("请输入：");
     scanf("%d",&n);
+    draw(n-1);
     draw(n);
 }
