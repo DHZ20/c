@@ -1,44 +1,29 @@
-/*
- * ============================================================================
- *
- *       Filename:  test.c
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  05/21/2020 09:24:53 PM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  lin chuan , linch1982@gmail.com
- *   Organization:  
- *
- * ============================================================================
- */
-#include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
-
-#define N 4
-
-int main() {
-    for (int i = 1000; i < 10000; i++)
-    {
-        int a = i % 10;
-        int b = i / 10 % 10;
-        int c = i / 100 % 10;
-        int d = i / 1000 % 10;
-        int e = pow(a, N) + pow(b, N) + pow(c, N) + pow(d, N);
-        /*
-        printf("%d\n", i);
-        printf("%d\n", a);
-        printf("%d\n", b);
-        printf("%d\n", c);
-        printf("%d\n", d);
-        printf("%d\n", e);
-        */
-        if (e == i) {
-            printf("%d\n", i);
+void draw(unsigned int n){
+    int a[100][100];
+    int i,j;
+    for(i=0;i<n;i++){
+        a[i][0]=i+1;
+    }
+     //每个数是上面两数之和
+    for(i=1;i<n;i++){
+        for(j=1;j<=i;j++){
+            a[i][j]=a[i-1][j-1]+a[i-1][j];
+            a[i][i]=i+1;
         }
     }
+    //打印
+    for(i=0;i<n;i++){
+        for(j=0;j<=i;j++){
+            printf("%5d",a[i][j]);
+        }
+            printf("\n");
+    }
+}
+
+int main(){
+    int n;
+    printf("请输入：");
+    scanf("%d",&n);
+    draw(n);
 }
