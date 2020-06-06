@@ -18,7 +18,7 @@
 ** 学习路线
    #+begin_src plantuml :file ./img/overview.svg
      @startmindmap
-     title C语言入门
+     title C语言入门学习路线
      ,* C语言
      ,** 基本数据类型
      ,*** 整数
@@ -53,6 +53,8 @@
      ,***_ 复合位赋值
      ,***_ sizeof
      ,** 高级数据结构
+     ,*** 数组
+     ,*** 字符串
      ,*** 结构体
      ,*** 结构体数组
      ,*** 指针
@@ -62,6 +64,9 @@
 
    #+RESULTS:
    [[file:./img/overview.svg]]
+** 学习资料
+   - [[https://wiki.banyuan.club/pages/viewpage.action?pageId=3051654][教材]]
+     
 ** 学习方法
    - 善于总结
    - 勤加练习
