@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [C语言入门](#orga1c06c2)
-    1.  [课程安排](#org9548857)
-    2.  [学习路线](#orgcab7986)
-    3.  [学习资料](#org389122f)
-    4.  [学习方法](#org6f34ec8)
+1.  [C语言入门](#org7fe6ee2)
+    1.  [课程安排](#org4e5d0de)
+    2.  [学习路线](#org0833ae0)
+    3.  [学习资料](#org9d1bba3)
+    4.  [学习方法](#orgcaaa107)
 
 
-<a id="orga1c06c2"></a>
+<a id="org7fe6ee2"></a>
 
 # C语言入门
 
 
-<a id="org9548857"></a>
+<a id="org4e5d0de"></a>
 
 ## 课程安排
 
@@ -76,6 +76,12 @@
 
 
 <tr>
+<td class="org-left">结构体</td>
+<td class="org-right">2</td>
+</tr>
+
+
+<tr>
 <td class="org-left">指针</td>
 <td class="org-right">4</td>
 </tr>
@@ -84,27 +90,27 @@
 <tbody>
 <tr>
 <td class="org-left">合计</td>
-<td class="org-right">18</td>
+<td class="org-right">20</td>
 </tr>
 </tbody>
 </table>
 
 
-<a id="orgcab7986"></a>
+<a id="org0833ae0"></a>
 
 ## 学习路线
 
 ![img](./img/overview.svg)
 
 
-<a id="org389122f"></a>
+<a id="org9d1bba3"></a>
 
 ## 学习资料
 
 -   [教材](https://wiki.banyuan.club/pages/viewpage.action?pageId=3051654)
 
 
-<a id="org6f34ec8"></a>
+<a id="orgcaaa107"></a>
 
 ## 学习方法
 
