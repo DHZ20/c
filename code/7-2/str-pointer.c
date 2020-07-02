@@ -32,9 +32,9 @@ int main() {
     my_strcpy(s, t);
     printf("%s\n", t);
 
-    my_strcat("ZZZZ", s);
-    printf("%s\n", s);
-    printf("len of s is %d\n", my_strlen(s));
+    my_strcat(s, t);
+    printf("%s\n", t);
+    printf("len of t is %d\n", my_strlen(t));
     return 0;
 }
 
@@ -45,6 +45,7 @@ void my_strcpy(char* s, char* t) {
         t++;
         s++;
     } while(*s != 0);
+    *t = 0;
 }
 
 int my_strcmp(char* s, char* t) {
