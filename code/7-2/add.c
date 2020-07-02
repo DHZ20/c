@@ -21,6 +21,8 @@
 int* twoSum(int* returnSize);
 
 
+int* sushudeshuzu(int n, int* returnSize);
+
 int main() {
     int size;
     int *a;
@@ -29,11 +31,18 @@ int main() {
     for (int i = 0; i < size; i++)
         printf("%3d", a[i]);
     printf("\n");
+
+    int* x = sushudeshuzu(10, &size);
     return 0;
 }
 
-int* twoSum(int* returnSize){
-    int a[3] = {1, 2, 3};
-    *returnSize = 3;
-    return a;
+int* sushudeshuzu(int n, int* returnSize){
+    // int a[3] = {1, 2, 3};
+    int *pa = malloc(sizeof(int) * 4);
+    pa[0] = 2;
+    pa[1] = 3;
+    pa[2] = 5;
+    pa[3] = 7;
+    *returnSize = 4;
+    return pa;
 }
