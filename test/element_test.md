@@ -1,16 +1,21 @@
 
 # Table of Contents
 
-1.  [简答题](#org3af6f0f)
-2.  [使用直线划分空间](#orgd151b1b)
-3.  [使用折线划分空间](#org4c9693b)
-4.  [打印三角形](#org9a403f9)
-5.  [实现atof函数](#orge25f9d7)
-6.  [使用栈的数据结构实现队列的功能](#orgda05c7d)
+1.  [简答题](#org268e8d9)
+2.  [下面C语言的输出是什么, 并给出解释](#orgcf2cafe)
+3.  [给出下面C语言程序的输出, 并解释为什么](#orgce5a230)
+4.  [下面C语言会输出什么, 并给出解释](#org115f2cd)
+5.  [二叉树如下,使用先序遍历的结果是:](#org2ade0b3)
+6.  [二叉搜索树如下, 请问以何种顺序输入无法构造这样的二叉树](#orga96d1cf)
+7.  [使用直线划分空间](#orgb6a4a01)
+8.  [使用折线划分空间](#org7229d44)
+9.  [打印三角形](#org37d6cb5)
+10. [实现atof函数](#orgf1a3ae5)
+11. [使用栈的数据结构实现队列的功能](#org4b8a4df)
 
 
 
-<a id="org3af6f0f"></a>
+<a id="org268e8d9"></a>
 
 # 简答题
 
@@ -19,7 +24,76 @@
 请问最少需要多少个箱子才能满足上述条件？
 
 
-<a id="orgd151b1b"></a>
+<a id="orgcf2cafe"></a>
+
+# 下面C语言的输出是什么, 并给出解释
+
+    char p[20]; 
+    char *s = "string"; 
+    int length = strlen(s); 
+    int i; 
+    for (i = 0; i < length; i++) 
+         p[i] = s[length — i]; 
+    printf("%s",p);
+
+-   a) gnirts
+-   b) gnirt
+-   c) string
+-   d) 没有输出
+
+
+<a id="orgce5a230"></a>
+
+# 给出下面C语言程序的输出, 并解释为什么
+
+    #include <stdio.h>
+    
+    int main() {
+        if (sizeof(int) > -1)
+    	printf("True");
+        else
+    	printf("False");
+    }
+
+
+<a id="org115f2cd"></a>
+
+# 下面C语言会输出什么, 并给出解释
+
+    #include <stdio.h>
+    main()
+    {
+        int n = 0, m = 0;
+        if (n > 0)
+    	if (m > 0)
+    	    printf("True");
+        else 
+    	printf("False");
+    }
+
+-   a) True
+-   b) False
+-   c) 没有输出
+-   d) 运行错误
+
+
+<a id="org2ade0b3"></a>
+
+# 二叉树如下,使用先序遍历的结果是:
+
+![img](./img/1234.png)
+
+
+<a id="orga96d1cf"></a>
+
+# 二叉搜索树如下, 请问以何种顺序输入无法构造这样的二叉树
+
+![img](./img/111222.png)
+
+![img](./img/111223.png)
+
+
+<a id="orgb6a4a01"></a>
 
 # 使用直线划分空间
 
@@ -39,7 +113,7 @@
         int calc_line_spaces(int n); // n >= 0
 
 
-<a id="org4c9693b"></a>
+<a id="org7229d44"></a>
 
 # 使用折线划分空间
 
@@ -59,7 +133,7 @@
         int calc_zig_spaces(int n); // n >= 0
 
 
-<a id="org9a403f9"></a>
+<a id="org37d6cb5"></a>
 
 # 打印三角形
 
@@ -70,7 +144,7 @@
     void draw(unsigned int n); // n > 0
 
 
-<a id="orge25f9d7"></a>
+<a id="orgf1a3ae5"></a>
 
 # 实现atof函数
 
@@ -93,7 +167,7 @@
         注意: 不考虑 +- 符号, 不考虑输入非法的情况
 
 
-<a id="orgda05c7d"></a>
+<a id="org4b8a4df"></a>
 
 # 使用栈的数据结构实现队列的功能
 
