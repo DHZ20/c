@@ -13,11 +13,12 @@ int main(int argc, const char * argv[]) {
         i = i+1;
     }
     
+    // 这是一个注释
     printf("i = %d", i);
     printf("\n");
     
     printf("sum = %d", sum);
     printf("\n");
-    
+
     return 0;
 }
