@@ -13,6 +13,8 @@
 int main(int argc, const char * argv[]) {
     srand((unsigned int)time(NULL));
     int a[3][2];
+    int b[] = {1, 2, 3};
+    int c[][2] = {1, 2, 3, 4};
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 2; j++) {
             a[i][j] = rand() % 100;
