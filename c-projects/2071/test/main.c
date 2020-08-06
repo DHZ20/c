@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+int main() {
+    char s[20];
+    int n = 0;
+    while( (s[n] = getchar()) != '\n' )
+        n++;
+    printf("%s", s);
+}
+
+#if 0
 int main(int argc, const char * argv[]) {
     int i = 0, no;
     int x = 1;
@@ -13,3 +22,4 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+#endif
