@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int myStrlen(char* s) {
     int len = 0;
@@ -84,5 +85,6 @@ int main(int argc, const char * argv[]) {
     printf("%d\n", myStrcmp("", ""));
     printf("%d\n", myStrcmp("abc", "abc"));
     printf("%d\n", myStrcmp("abd", "abc"));
+    strtol(<#const char *__str#>, <#char **__endptr#>, <#int __base#>)
     return 0;
 }
