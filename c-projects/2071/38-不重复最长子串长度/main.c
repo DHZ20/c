@@ -30,7 +30,7 @@ int lengthOfLongestSubstring(char * s){
 }
 
 int main() {
-    char* s = "";
+    char* s = "asdfasdfasdfasdfsssasdfg";
     printf("%d\n", lengthOfLongestSubstring(s));
     return 0;
 }

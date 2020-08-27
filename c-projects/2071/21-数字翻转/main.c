@@ -23,11 +23,14 @@ int main(int argc, const char * argv[]) {
         }
     }
      */
+    int result = 0;
     do {
         printf("%d", x % 10);
+        result = result * 10 + x % 10;
         x = x / 10;
     } while(x != 0);
     
     printf("\n");
+    printf("result = %d\n", result);
     return 0;
 }
