@@ -1,10 +1,22 @@
 * 回答如下定义的含义
   1. ~int (*ptr)[10];~
+
+     回答：
+
   2. ~(void*)0~
+
+     回答：
+
   3. ~int *f();~
+
+     回答：
+
   4. ~char *p = (char*)malloc(100);~
 
+     回答：
+
 * 解释如下程序的执行结果
+
 
   #+begin_src c
     #include<stdio.h>
@@ -16,6 +28,8 @@
 	return 0;
     }
   #+end_src
+
+  回答：
 
   #+begin_src c
     #include<stdio.h>
@@ -33,6 +47,8 @@
     }
   #+end_src
 
+  回答：
+
   #+begin_src c
     #include<stdio.h>
 
@@ -48,6 +64,8 @@
 	return 0;
     }
   #+end_src
+
+  回答：
 
   #+begin_src c
     #include<stdio.h>
@@ -67,6 +85,8 @@
     }
   #+end_src
 
+  回答：
+
   #+begin_src c
     #include
 
@@ -79,6 +99,8 @@
 	return 0;
     }
   #+end_src
+
+  回答：
 
   #+begin_src c
     #include<stdio.h>
@@ -95,6 +117,8 @@
     }
   #+end_src
 
+  回答：
+
   #+begin_src c
     #include <stdio.h>
 
@@ -105,6 +129,8 @@
 	return 0;
     }
   #+end_src
+
+  回答：
 
   #+begin_src c
     #include <stdio.h>
@@ -119,6 +145,8 @@
 	return 0;
     }
   #+end_src
+
+  回答：
 
   #+begin_src c
     #include <stdio.h>
@@ -135,6 +163,8 @@
     }
   #+end_src
 
+  回答：
+
   #+begin_src c
     #include <stdio.h>
     int main()
@@ -146,3 +176,5 @@
 	return 0;
     }
   #+end_src
+
+  回答：
